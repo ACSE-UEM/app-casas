@@ -49,3 +49,21 @@ As this is currently a specification-only repository, no build or run commands a
 - [TODO] Define PHP/MySQL environment setup.
 - [TODO] Document WordPress plugin development/installation process.
 - [TODO] Specify API documentation (OpenAPI/Swagger) location.
+
+
+
+# Rules you MUST fulfil
+- lint every asset built
+- don't remove/exclude unless explicited
+- you can chat in english, but documents should always be in portuguese brazilian
+- my docker images preferable use alpine
+- when handling tooling and repeatable processes, create makefile rules
+- when final version was built, ask to create a README.md
+- if a 3rd service should be used, ask to create setup/configuration/integration steps
+
+# Minimum viable product
+# Development
+- use docker compose
+- the AI tools is running on host or docker
+
+# Final product
