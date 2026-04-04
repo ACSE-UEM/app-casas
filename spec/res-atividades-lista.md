@@ -1,0 +1,214 @@
+Aqui está uma lista com tipos de tarefas e atividades comuns no meio espírita, abrangendo estudos, práticas, ajuda ao próximo, eventos e trabalhos diversos:
+
+- Ações de inclusão social em comunidades carentes  
+- Acompanhamento em processos de desencarnar  
+- Acompanhamento em reuniões de autoconhecimento  
+- Análise de sonhos com interpretação espírita  
+- Apoio a cuidadores familiares  
+- Apoio a gestantes por intermédio da doutrina  
+- Apoio a pessoas com distúrbios espirituais  
+- Apoio a pessoas em processos de mudança de vida  
+- Apoio a pessoas em situação de rua  
+- Apoio a vítimas de desastres naturais  
+- Apoio educativo a crianças carentes  
+- Apoio espiritual a profissionais da saúde  
+- Apoio jurídico por inspiração espírita  
+- Apoio pedagógico em instituições espíritas  
+- Apoio psicológico para pessoas enlutadas  
+- Assistência social (doação de roupas, alimentos)  
+- Atendimento a adolescentes em situação de risco  
+- Atendimento a desencarnados  
+- Atendimento a famílias em sofrimento  
+- Atendimento a obsessores e obsessos  
+- Atendimento a pessoas com dependência afetiva  
+- Atendimento a pessoas com necessidades especiais  
+- Atendimento a pessoas com problemas de autoestima  
+- Atendimento a pessoas com transtornos mentais  
+- Atendimento a pessoas em crise existencial  
+- Atendimento a pessoas em reabilitação  
+- Atendimento a pessoas enlutadas  
+- Atendimento a pessoas vítimas de violência doméstica  
+- Atendimento e acompanhamento a crianças especiais  
+- Atendimento e orientação a desencarnados em plano espiritual  
+- Atendimento e orientação para desencarnados em regiões de difícil acesso  
+- Atendimento e orientação para desobsessão familiar  
+- Atendimento em situações de emergência  
+- Atendimento espiritual a idosos  
+- Atendimento fraterno  
+- Atendimento fraterno em domicílio  
+- Atendimento individual com acompanhamento espiritual  
+- Atendimento online fraterno  
+- Atendimento por meio de canalizações  
+- Atendimento psicológico com base espírita  
+- Atendimento remoto via videochamada  
+- Atividades recreativas para crianças espíritas  
+- Aulas de espiritismo para iniciantes  
+- Aulas de história do espiritismo  
+- Cadastramento de médiuns e trabalhadores  
+- Campanha de esclarecimento contra a superstição  
+- Campanhas contra a violência  
+- Campanhas de combate ao preconceito  
+- Campanhas de doação de sangue com motivação espírita  
+- Campanhas de esclarecimento sobre a Doutrina Espírita  
+- Capacitação em técnicas de desdobramento espiritual  
+- Capacitação para novos dirigentes  
+- Captação de recursos para projetos sociais  
+- Captação e formação de médiuns  
+- Centro de atendimento a dependentes químicos  
+- Charretes de ajuda ao doente  
+- Círculos de prece mediúnica  
+- Compostagem e atividades ecológicas com base espírita  
+- Confecção e distribuição de amuletos espirituais  
+- Coordenação de atividades culturais em centros espíritas  
+- Coordenação de cantos e louvores em reuniões  
+- Coordenação de cursos sobre ética espírita  
+- Coordenação de eventos para captação de novos frequentadores  
+- Coordenação de grupos de estudo em ambientes virtuais  
+- Coordenação de grupos de estudo para formação de voluntários  
+- Coordenação de grupos de estudos comparativos de religiões  
+- Coordenação de grupos mediúnicos  
+- Coordenação de grupos para acolhimento de desencarnados  
+- Coordenação de iniciativas para sustentabilidade  
+- Coordenação de sessões de passes para grupos específicos  
+- Coordenação de tarefas administrativas no centro  
+- Criação de aplicativos espíritas  
+- Criação de artes digitais para divulgação da doutrina  
+- Criação de espaços de acolhimento para mães e filhos  
+- Criação de grupos de estudos temáticos  
+- Criação de grupos de suporte a portadores de doenças graves  
+- Criação de mapas mentais sobre temas da doutrina  
+- Criação de podcasts para estudo da doutrina  
+- Criação de vídeos explicativos para iniciantes  
+- Cruzadas de caridade e espiritualidade  
+- Culto espírita para desencarnados  
+- Curso de mediunidade  
+- Desenvolvimento de diálogos inter-religiosos  
+- Desenvolvimento de ferramentas pedagógicas espíritas  
+- Desenvolvimento de jogos digitais com temas espíritas  
+- Desenvolvimento de material didático espírita  
+- Desenvolvimento de sistemas de gestão para centros espíritas  
+- Desenvolvimento mediúnico  
+- Diagnóstico espiritual  
+- Distribuição de livros e folhetos espíritas  
+- Divulgação de mensagens psicografadas  
+- Elaboração de boletins informativos  
+- Elaboração de cartas e mensagens de conforto  
+- Elaboração de materiais para evangelização virtual  
+- Elaboração de planejamentos para estudos avançados  
+- Elaboração de planilhas de acompanhamento de frequentadores  
+- Elaboração de programas de rádio espírita  
+- Elaboração de roteiros para sessões mediúnicas  
+- Estímulo à prática do bem no dia a dia  
+- Estudo da Doutrina Espírita  
+- Estudo de passes magnéticos  
+- Estudo sobre experiências de quase morte  
+- Evangelização de adultos  
+- Evangelização infantil espírita  
+- Formação de equipes para atendimentos emergenciais  
+- Formação de grupos para estudo de filosofia espírita  
+- Grupo de apoio a pais e familiares  
+- Grupo de auxílio à saúde mental  
+- Grupo de estudo de livros específicos de Allan Kardec  
+- Grupo de exercícios espirituais  
+- Grupo de preces e orações  
+- Grupo de reflexão espírita  
+- Grupos de leitura espírita  
+- Grupos de meditação espírita  
+- Grupos de trabalho sobre mediunidade consciente  
+- Incentivo à prática de exercícios físicos com base espírita  
+- Iniciação à psicografia para iniciantes  
+- Instrução sobre uso correto da mediunidade  
+- Jogos educativos com temas espíritas  
+- Montagem de exposições sobre o espiritismo  
+- Música espírita e coral  
+- Mutirões de limpeza em centros espíritas  
+- Oferta de cursos de autoajuda espírita  
+- Oficina de arte espírita  
+- Oficinas de teatro espírita  
+- Organização de atividades esportivas com enfoque espírita  
+- Organização de bazares beneficentes  
+- Organização de bibliotecas espíritas  
+- Organização de cursos de autoconhecimento  
+- Organização de eventos beneficentes  
+- Organização de festas e eventos comemorativos  
+- Organização de festivais espíritas  
+- Organização de grupos de estudo sobre ética e moral espírita  
+- Organização de grupos de jovens espíritas  
+- Organização de grupos de literatura espírita  
+- Organização de grupos de reflexão sobre temas sociais  
+- Organização de grupos de trabalho em grupos de jovens  
+- Organização de grupos de trabalho voluntário  
+- Organização de grupos para reflexão filosófica  
+- Organização de palestras sobre mediunidade e ciência  
+- Organização de palestras sobre saúde mental e espiritualidade  
+- Organização de visitas a pacientes com doenças terminais  
+- Organização de workshops de autoconhecimento  
+- Organização de workshops sobre saúde e espiritualidade  
+- Orientação em processos de autotransformação  
+- Palestras doutrinárias  
+- Palestras sobre desobsessão  
+- Participação em atividades ecológicas com fundamentos espirituais  
+- Participação em campanhas de arrecadação de fundos  
+- Participação em fóruns e debates espíritas  
+- Participação em grupos de pesquisa científica com foco espírita  
+- Passes espirituais  
+- Pesquisa histórica sobre o espiritismo  
+- Pesquisa sobre espiritualidade e saúde  
+- Pesquisa sobre reencarnação  
+- Planejamento de ações de caridade em feriados  
+- Planejamento e organização de caravanas para eventos espíritas  
+- Planejamento estratégico para centros espíritas  
+- Plantão de atendimento espiritual emergencial  
+- Prática do passe coletivo em eventos  
+- Produção de conteúdo espírita para redes sociais  
+- Produção de documentários sobre temas espíritas  
+- Produção de filmes espíritas  
+- Produção de infográficos com conceitos espíritas  
+- Produção de materiais para ensino infantil espírita  
+- Produção de palestras online  
+- Produção de podcasts sobre espiritismo  
+- Produção de quadros e artes para divulgação  
+- Produção de revistas espíritas  
+- Produção de textos literários inspirados no espiritismo  
+- Produção de vídeos doutrinários  
+- Programas de incentivo à leitura espírita  
+- Programas de mentorias para médiuns iniciantes  
+- Promoção de encontros entre centros espíritas  
+- Promoção de palestras motivacionais com base espírita  
+- Promoção de saúde com base espírita  
+- Publicação de artigos espíritas  
+- Publicação de livros e traduções espíritas  
+- Rádio e TV espírita  
+- Realização de atividades de confraternização entre centros  
+- Realização de congressos espíritas  
+- Realização de cursos de psicologia espírita  
+- Realização de grupos de famílias  
+- Realização de oficinas sobre aconselhamento espírita  
+- Realização de retiros espirituais  
+- Realização de sessões de desobsessão individual  
+- Realização de sessões de psicografia  
+- Realização de visitas e intercâmbios com outros centros espíritas  
+- Reuniões mediúnicas  
+- Seminários espíritas  
+- Trabalhos de desobsessão em grupo  
+- Tradução de mensagens mediúnicas para diversas línguas  
+- Tradução de obras espíritas  
+- Tradução e divulgação de mensagens psicografadas  
+- Uso da cromoterapia baseada em fundamentos espíritas  
+- Visitas a asilos  
+- Visitas a hospitais  
+- Visitas a presídios  
+- Visitas espirituais mediúnicas  
+- Visitas multidisciplinares com apoio espiritual  
+
+Essa lista traz uma visão ampla das diferentes atividades ligadas ao espiritismo, envolvendo: 
+- estudo
+- reforma íntima
+- apoio espiritual
+- apoio social
+- apoio educacional e cultural
+- apoio profissionalizante
+- serviço social, mas baseado em princípios espíritas
+
+
+

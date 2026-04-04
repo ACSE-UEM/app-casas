@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html class="wp-toolbar"
+	lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Adicionar participante &lsaquo; Casas Espíritas &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(function(){func();});else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp-admin/admin-ajax.php',
+	pagenow = 'participants-database_page_participants-database-add_participant',
+	typenow = '',
+	adminpage = 'participants-database_page_participants-database-add_participant',
+	thousandsSeparator = '.',
+	decimalPoint = ',',
+	isRtl = 0;
+</script>
+        <style type="text/css">
+            label.tg-label.breadcrumbs img {
+                width: 6%;
+                padding: 0;
+            }
+            .appointment-theme-notice .theme-owc-title{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                font-size: 1.5em;
+            }
+            .appointment-theme-notice p{
+                font-size: 14px;
+            }
+            .updated.notice.appointment-theme-notice h3{
+                margin: 0;
+            }
+            div.appointment-theme-notice.updated {
+                border-left-color: #ee591f;
+            }
+            .appointment-theme-content{
+                padding: 0 0 1.2rem 3.57rem;
+            }
+        </style>
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='stylesheet' href='https://casas.uemmg.org.br/wp-admin/load-styles.php?c=0&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;load%5Bchunk_1%5D=,site-icon,l10n,buttons,wp-auth-check,wp-components,wp-commands&amp;ver=6.9.4' type="text/css" media='all' />
+<style type="text/css">
+@media print { #wpadminbar { display:none; } }
+/*# sourceURL=css-inline-concat-dashicons%2Cadmin-bar%2Ccommon%2Cforms%2Cadmin-menu%2Cdashboard%2Clist-tables%2Cedit%2Crevisions%2Cmedia%2Cthemes%2Cabout%2Cnav-menus%2Cwp-pointer%2Cwidgets%2Csite-icon%2Cl10n%2Cbuttons%2Cwp-auth-check%2Cwp-components%2Cwp-commands */
+</style>
+<link rel='stylesheet' id='appointment-customizer-info-css' href='https://casas.uemmg.org.br/wp-content/themes/appointment/css/pro-feature.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='pdb-jquery-ui-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/jquery-ui-theme/jquery-ui.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='pdb-jquery-ui-structure-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/jquery-ui-theme/jquery-ui.structure.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='pdb-jquery-ui-theme-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/jquery-ui-theme/jquery-ui.pdb-theme.css?ver=2.0' media='all' />
+<link rel='stylesheet' id='pdb-global-admin-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/PDb-admin-global.css?ver=2.7.8.1' media='all' />
+<link rel='stylesheet' id='pdb-utility-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/xnau-utility.css?ver=2.7.8.1' media='all' />
+<link rel='stylesheet' id='pdb-frontend-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/participants-database.css?ver=2.7.8.1.1' media='all' />
+<style id='pdb-frontend-inline-css'>
+
+.image-field-wrap img {
+   height:3em;
+   max-width: inherit;
+}
+.pdb-list .image-field-wrap img {
+   height:50px;
+   max-width: inherit;
+}
+:root {
+   --PDb-pagination-border-color: rgba(204, 204, 204, 1); 
+   --PDb-pagination-hover-color: #CCC; 
+   --PDb-pagination-bg: #FAFAFA; 
+   --PDb-pagination-current-bg: rgba(204, 204, 204, 1); 
+   --PDb-pagination-current-color: #FFF; 
+   --PDb-pagination-disabled-bg: #F3F3F3; 
+   --PDb-pagination-disabled-color: #777; 
+   --PDb-message-bg: #FFF; 
+   --PDb-message-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); 
+   --PDb-flex-row-bg: rgba(0,0,0,0.05); 
+}
+
+</style>
+<link rel='stylesheet' id='pdb-admin-css' href='https://casas.uemmg.org.br/wp-content/plugins/participants-database/css/PDb-admin.css?ver=2.7.8.11.3' media='all' />
+<link rel='stylesheet' id='wp-mail-smtp-admin-bar-css' href='https://casas.uemmg.org.br/wp-content/plugins/wp-mail-smtp/assets/css/admin-bar.min.css?ver=4.7.1' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"/","uid":"3","time":"1775268117","secure":"1"};
+//# sourceURL=js-inline-concat-jquery-core%2Cjquery-migrate%2Cutils%2Cjquery-ui-core%2Cjquery-ui-mouse%2Cjquery-ui-sortable%2Cjquery-ui-resizable%2Cjquery-ui-draggable%2Cjquery-ui-controlgroup%2Cjquery-ui-checkboxradio%2Cjquery-ui-button%2Cjquery-ui-dialog%2Cjquery-ui-tabs
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://casas.uemmg.org.br/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate,utils,jquery-ui-core,jquery-ui-mouse,jquery-ui-sortable,jquery-ui-resizable,jquery-ui-draggable,jquer&amp;load%5Bchunk_1%5D=y-ui-controlgroup,jquery-ui-checkboxradio,jquery-ui-button,jquery-ui-dialog,jquery-ui-tabs&amp;ver=6.9.4'></script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/jquery.doubleScroll.js?ver=6.9.4" id="jq-doublescroll-js"></script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/js.cookie-2.2.1.min.js?ver=2.2.1" id="pdb-cookie-js"></script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/admin.js?ver=2.7.8.1" id="pdb-admin-js"></script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/otherselect.js?ver=6.9.4" id="pdb-otherselect-js"></script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/pdb_admin_notices.js?ver=2.7.8.1" id="pdb-admin-notices-js"></script>
+<script id="pdb-admin-notices-js-after">
+var PDb_Notices={"action":"pdb_admin_notices_dismiss","nonce":"81256fde69"}
+//# sourceURL=pdb-admin-notices-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/aux_plugin_settings.js?ver=2.7.8.1" id="pdb-aux_plugin_settings_tabs-js"></script>
+				<style type="text/css">
+					#adminmenu .toplevel_page_googlesitekit-dashboard img {
+						width: 16px;
+					}
+					#adminmenu .toplevel_page_googlesitekit-dashboard.current img,
+					#adminmenu .toplevel_page_googlesitekit-dashboard.wp-has-current-submenu img {
+						opacity: 1;
+					}
+				</style>
+				<style>a.wp-mail-smtp-sidebar-upgrade-pro { background-color: #00a32a !important; color: #fff !important; font-weight: 600 !important; }</style><script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#a7aaad","focus":"#72aee6","current":"#fff"}};</script>
+	<link id="wp-admin-canonical" rel="canonical" href="https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-add_participant" />
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"></head>
+<body class="wp-admin wp-core-ui no-js pdb-jquery-ui  has-dashicons  participants-database_page_participants-database-add_participant admin-bar branch-6-9 version-6-9-4 admin-color-fresh locale-pt-br no-customize-support svg wp-theme-appointment wp-child-theme-appointment-blue">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+<script>
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	
+//# sourceURL=wp_customize_support_script
+</script>
+
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="Menu principal">
+<a href="#wpbody-content" class="screen-reader-shortcut">Pular para o conteúdo principal</a>
+<a href="#wp-toolbar" class="screen-reader-shortcut">Pular para a barra de ferramentas</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-dashboard' aria-hidden='true'><br /></div><div class='wp-menu-name'>Painel</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Painel</li><li class="wp-first-item"><a href='index.php' class="wp-first-item">Início</a></li><li><a href='update-core.php'>Atualizações <span class="update-plugins count-4"><span class="update-count">4</span></span></a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_googlesitekit-dashboard menu-top-last" id="toplevel_page_googlesitekit-dashboard"><a href='admin.php?page=googlesitekit-dashboard' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_googlesitekit-dashboard menu-top-last" data-ariahaspopup><div class='wp-menu-image svg' style="background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdib3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjYTdhYWFkIiBkPSJNMTcuNiA4LjVoLTcuNXYzaDQuNGMtLjQgMi4xLTIuMyAzLjUtNC40IDMuNC0yLjYtLjEtNC42LTIuMS00LjctNC43LS4xLTIuNyAyLTUgNC43LTUuMSAxLjEgMCAyLjIuNCAzLjEgMS4ybDIuMy0yLjJDMTQuMSAyLjcgMTIuMSAyIDEwLjIgMmMtNC40IDAtOCAzLjYtOCA4czMuNiA4IDggOGM0LjYgMCA3LjctMy4yIDcuNy03LjgtLjEtLjYtLjEtMS4xLS4zLTEuN3oiIGZpbGxydWxlPSJldmVub2RkIiBjbGlwcnVsZT0iZXZlbm9kZCI+PC9wYXRoPjwvc3ZnPg==')" aria-hidden='true'><br /></div><div class='wp-menu-name'>Site Kit</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Site Kit</li><li class="wp-first-item"><a href='admin.php?page=googlesitekit-dashboard' class="wp-first-item">Painel</a></li><li><a href='admin.php?page=googlesitekit-settings'>Configurações</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" id="menu-posts">
+	<a href='edit.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-post' aria-hidden='true'><br /></div><div class='wp-menu-name'>Posts</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Posts</li><li class="wp-first-item"><a href='edit.php' class="wp-first-item">Todos os posts</a></li><li><a href='post-new.php'>Adicionar post</a></li><li><a href='edit-tags.php?taxonomy=category'>Categorias</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-media' aria-hidden='true'><br /></div><div class='wp-menu-name'>Mídia</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Mídia</li><li class="wp-first-item"><a href='upload.php' class="wp-first-item">Biblioteca</a></li><li><a href='media-new.php'>Adicionar arquivo de mídia</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-page' aria-hidden='true'><br /></div><div class='wp-menu-name'>Páginas</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Páginas</li><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">Todas as páginas</a></li><li><a href='post-new.php?post_type=page'>Adicionar página</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+	<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" ><div class='wp-menu-image dashicons-before dashicons-admin-comments' aria-hidden='true'><br /></div><div class='wp-menu-name'>Comentários <span class="awaiting-mod count-0"><span class="pending-count" aria-hidden="true">0</span><span class="comments-in-moderation-text screen-reader-text">0 comentário esperando moderação</span></span></div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-appearance' aria-hidden='true'><br /></div><div class='wp-menu-name'>Aparência</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Aparência</li><li class="wp-first-item"><a href='themes.php' class="wp-first-item">Temas <span class="update-plugins count-3"><span class="theme-count">3</span></span></a></li><li><a href='site-editor.php?p=/pattern'>Padrões</a></li><li class="hide-if-no-customize"><a href='customize.php?return=%2Fwp-admin%2Fadmin.php%3Fpage%3Dparticipants-database-add_participant' class="hide-if-no-customize">Personalizar</a></li><li><a href='widgets.php'>Widgets</a></li><li><a href='nav-menus.php'>Menus</a></li><li><a href='theme-editor.php'>Editor de arquivos de tema</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href='plugins.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-plugins' aria-hidden='true'><br /></div><div class='wp-menu-name'>Plugins <span class="update-plugins count-1"><span class="plugin-count">1</span></span></div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Plugins <span class="update-plugins count-1"><span class="plugin-count">1</span></span></li><li class="wp-first-item"><a href='plugins.php' class="wp-first-item">Plugins instalados</a></li><li><a href='plugin-install.php'>Adicionar plugin</a></li><li><a href='plugin-editor.php'>Editor de arquivos de plugin</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-users' aria-hidden='true'><br /></div><div class='wp-menu-name'>Usuários</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Usuários</li><li class="wp-first-item"><a href='users.php' class="wp-first-item">Todos os usuários</a></li><li><a href='user-new.php'>Adicionar usuário</a></li><li><a href='profile.php'>Perfil</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-tools' aria-hidden='true'><br /></div><div class='wp-menu-name'>Ferramentas</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Ferramentas</li><li class="wp-first-item"><a href='tools.php' class="wp-first-item">Ferramentas disponíveis</a></li><li><a href='import.php'>Importar</a></li><li><a href='export.php'>Exportar</a></li><li><a href='site-health.php'>Diagnóstico <span class="menu-counter site-health-counter count-0"><span class="count">0</span></span></a></li><li><a href='export-personal-data.php'>Exportar dados pessoais</a></li><li><a href='erase-personal-data.php'>Apagar dados pessoais</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings" id="menu-settings">
+	<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings" data-ariahaspopup><div class='wp-menu-image dashicons-before dashicons-admin-settings' aria-hidden='true'><br /></div><div class='wp-menu-name'>Configurações</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Configurações</li><li class="wp-first-item"><a href='options-general.php' class="wp-first-item">Geral</a></li><li><a href='options-writing.php'>Escrita</a></li><li><a href='options-reading.php'>Leitura</a></li><li><a href='options-discussion.php'>Discussão</a></li><li><a href='options-media.php'>Mídia</a></li><li><a href='options-permalink.php'>Links permanentes</a></li><li><a href='options-privacy.php'>Privacidade</a></li><li><a href='options-general.php?page=casas-sitemaps-pdb'>CASAS Sitemaps</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_wp-mail-smtp menu-top-last" id="toplevel_page_wp-mail-smtp"><a href='admin.php?page=wp-mail-smtp' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_wp-mail-smtp menu-top-last" data-ariahaspopup><div class='wp-menu-image svg' style="background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM5ZWEzYTgiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDQzIDM0Ij48cGF0aCBkPSJNMC4wMDcsMy41ODVWMjAuNDIxcTAsMy41ODYsMy43NTEsMy41ODVMMjAsMjRWMTlIMzBWMTQuMDE0bDAuOTkxLTFMMzQsMTNWMy41ODVRMzQsMCwzMC4yNDksMEgzLjc1OFEwLjAwNywwLC4wMDcsMy41ODVoMFpNMy41MjQsNi4xNTdhMS40OSwxLjQ5LDAsMCwxLS41MDgtMC45MzUsMS41ODEsMS41ODEsMCwwLDEsLjI3NC0xLjIwOCwxLjQ0OSwxLjQ0OSwwLDAsMSwxLjA5NC0uNjYzLDEuNzU2LDEuNzU2LDAsMCwxLDEuMjUuMzEybDExLjQwOSw3LjcxNkwyOC4zNzQsMy42NjNhMS45NiwxLjk2LDAsMCwxLDEuMjg5LS4zMTIsMS41NDYsMS41NDYsMCwwLDEsMS4wOTQuNjYzLDEuNCwxLjQsMCwwLDEsLjI3MywxLjIwOCwxLjY3LDEuNjcsMCwwLDEtLjU0Ny45MzVMMTcuMDQzLDE3LjIyNVoiLz48cGF0aCBkPSJNMjIsMjhIMzJsLTAuMDA5LDQuNjI0YTEuMTI2LDEuMTI2LDAsMCwwLDEuOTIyLjhsOC4yNS04LjIzNmExLjEyNiwxLjEyNiwwLDAsMCwwLTEuNTk0bC04LjI1LTguMjQxYTEuMTI2LDEuMTI2LDAsMCwwLTEuOTIyLjh2NC44NjZMMjIsMjF2N1oiLz48L3N2Zz4=')" aria-hidden='true'><br /></div><div class='wp-menu-name'>WP Mail SMTP</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>WP Mail SMTP</li><li class="wp-first-item"><a href='admin.php?page=wp-mail-smtp' class="wp-first-item">Configurações</a></li><li><a href='admin.php?page=wp-mail-smtp-logs'>Registro de e-mail</a></li><li><a href='admin.php?page=wp-mail-smtp-reports'>Relatórios de e-mail</a></li><li><a href='admin.php?page=wp-mail-smtp-tools'>Ferramentas</a></li><li><a href='admin.php?page=wp-mail-smtp-about'>Quem somos</a></li><li class="wp-mail-smtp-sidebar-upgrade-pro"><a href='https://wpmailsmtp.com/lite-upgrade/?utm_source=WordPress&#038;utm_medium=admin-menu&#038;utm_campaign=liteplugin&#038;utm_locale=pt_br&#038;utm_content=Upgrade%20to%20Pro%20-%20participants-database_page_participants-database-add_participant' class="wp-mail-smtp-sidebar-upgrade-pro">Atualizar para a versão Pro</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-generic toplevel_page_participants-database menu-top-first" id="toplevel_page_participants-database"><a href='admin.php?page=participants-database' class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-generic toplevel_page_participants-database menu-top-first" ><div class='wp-menu-image dashicons-before dashicons-admin-generic' aria-hidden='true'><br /></div><div class='wp-menu-name'>Participants Database</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Participants Database</li><li class="wp-first-item"><a href='admin.php?page=participants-database' class="wp-first-item">Listar participantes</a></li><li class="current"><a href='admin.php?page=participants-database-add_participant' class="current" aria-current="page">Adicionar participante</a></li><li><a href='admin.php?page=participants-database-manage_fields'>Gerenciar campos do banco de dados</a></li><li><a href='admin.php?page=participants-database-manage_list_columns'>Gerenciar colunas de lista</a></li><li><a href='admin.php?page=participants-database-upload_csv'>Importar arquivo CSV</a></li><li><a href='admin.php?page=participants-database_settings_page'><span class="dashicons dashicons-admin-generic"></span>Configurações</a></li><li><a href='admin.php?page=participants-database-setup_guide'>Guia de Configuração</a></li><li><a href='admin.php?page=participants-database-pdb-locations-map_settings'>Locations Map</a></li><li><a href='admin.php?page=pdb-schema-settings'>Schema Markup</a></li><li><a href='admin.php?page=participants-database-pdb_debugging'>Registro de depuração</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_appointment-welcome menu-top-last" id="toplevel_page_appointment-welcome">
+	<a href='admin.php?page=appointment-welcome' class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_appointment-welcome menu-top-last" ><div class='wp-menu-image dashicons-before dashicons-admin-generic' aria-hidden='true'><br /></div><div class='wp-menu-name'>Appointment Panel</div></a></li><li id="collapse-menu" class="hide-if-no-js"><button type="button" id="collapse-button" aria-label="Recolher menu principal" aria-expanded="true"><span class="collapse-button-icon" aria-hidden="true"></span><span class="collapse-button-label">Recolher menu</span></button></li></ul>
+</div>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Barra de ferramentas">
+				<ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu"><li role='group' id='wp-admin-bar-menu-toggle'><a class='ab-item' role="menuitem" href='#'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">Menu</span></a></li><li role='group' id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://casas.uemmg.org.br/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">Sobre o WordPress</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Sobre o WordPress' id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li role='group' id='wp-admin-bar-about'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/about.php'>Sobre o WordPress</a></li><li role='group' id='wp-admin-bar-contribute'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/contribute.php'>Participe</a></li></ul><ul role='menu' aria-label='Sobre o WordPress' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li role='group' id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem" href='https://br.wordpress.org/'>WordPress.org</a></li><li role='group' id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem" href='https://wordpress.org/documentation/'>Documentação</a></li><li role='group' id='wp-admin-bar-learn'><a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>Aprenda WordPress</a></li><li role='group' id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem" href='https://br.wordpress.org/support/forums/'>Suporte</a></li><li role='group' id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forum/requests-and-feedback'>Sugestões e comentários</a></li></ul></div></li><li role='group' id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://casas.uemmg.org.br/'>Casas Espíritas</a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Casas Espíritas' id='wp-admin-bar-site-name-default' class="ab-submenu"><li role='group' id='wp-admin-bar-view-site'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/'>Visitar site</a></li></ul></div></li><li role='group' id='wp-admin-bar-updates'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/update-core.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label" aria-hidden="true">4</span><span class="screen-reader-text updates-available-text">4 atualizações disponíveis</span></a></li><li role='group' id='wp-admin-bar-comments'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 comentário esperando moderação</span></a></li><li role='group' id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://casas.uemmg.org.br/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">Novo</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Novo' id='wp-admin-bar-new-content-default' class="ab-submenu"><li role='group' id='wp-admin-bar-new-post'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/post-new.php'>Post</a></li><li role='group' id='wp-admin-bar-new-media'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/media-new.php'>Mídia</a></li><li role='group' id='wp-admin-bar-new-page'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/post-new.php?post_type=page'>Página</a></li><li role='group' id='wp-admin-bar-new-user'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/user-new.php'>Usuário</a></li></ul></div></li><li role='group' id='wp-admin-bar-wp-mail-smtp-menu'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp'>WP Mail SMTP <div class="wp-mail-smtp-admin-bar-menu-notification-counter"><span>1</span></div></a></li></ul><ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li role='group' id='wp-admin-bar-my-account' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://casas.uemmg.org.br/wp-admin/profile.php'>Olá, <span class="display-name">Cláudio Cláudio - ACSE</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Olá, Cláudio Cláudio - ACSE' id='wp-admin-bar-user-actions' class="ab-submenu"><li role='group' id='wp-admin-bar-user-info'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-admin/profile.php'><span class='display-name'>Cláudio Cláudio - ACSE</span><span class='username'>Claudio</span><span class='display-name edit-profile'>Editar perfil</span></a></li><li role='group' id='wp-admin-bar-logout'><a class='ab-item' role="menuitem" href='https://casas.uemmg.org.br/wp-login.php?action=logout&#038;_wpnonce=1967dbd341'>Sair</a></li></ul></div></li></ul>			</div>
+		</div>
+
+		
+<div id="wpbody" role="main">
+
+<div id="wpbody-content">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden no-sidebar" tabindex="-1" aria-label="Aba de ajuda contextual">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+												</ul>
+					</div>
+
+					
+					<div class="contextual-help-tabs-wrap">
+											</div>
+				</div>
+			</div>
+				</div>
+		  <div class="wrap pdb-admin-edit-participant participants_db top-bar-space">
+    <h2>Adicionar novo registro de participante</h2>
+        <form method="post" action="/wp-admin/admin.php?page=participants-database-add_participant" enctype="multipart/form-data" autocomplete="off" >
+      <input name="action" type="hidden" value="insert" />
+
+<input name="subsource" type="hidden" value="participants-database" />
+
+<input name="pdb_modified" type="hidden" value="0" />
+
+<input name="id" type="hidden" value="" />
+
+<input name="private_id" type="hidden" value="PA31UK0" />
+      <div class="top-bar-submit">
+        <span class="field-group-title">Salve o registro</span>
+            <input class="button button-primary" type="submit" value="Enviar" name="submit_button">
+<input class="button button-primary" type="submit" value="Aplicar" name="submit_button">
+<input class="button button-default button-rightarrow" type="submit" value="Novo" name="submit_button">
+      </div>
+            <div  class="field-group field-group-main" >
+        <h3 class="field-group-title">Casa Espírita</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="text-line ce_name-field">
+                                    <th>Nome da Casa Espírita<span class="reqd">*</span></th>
+            <td id="pdb-ce_name-field" >
+              <input name="ce_name" class="required-field regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line city-field">
+                                    <th>Localidade/Cidade<span class="reqd">*</span></th>
+            <td id="pdb-city-field" >
+              <input name="city" class="required-field regular-text" type="text" value="" />
+                <span class="helptext">Informe o distrito ou cidade onde a Casa Espírita está localizada, e <strong>não inclua MG</strong> como parte da localidade</span>
+                          </td>
+          </tr>
+          
+          <tr class="text-line ce_admin_name-field">
+                                    <th>Nome do Contato<span class="reqd">*</span></th>
+            <td id="pdb-ce_admin_name-field" >
+              <input name="ce_admin_name" class="required-field regular-text" type="text" value="" />
+                <span class="helptext">Pessoa administradora das informações da Casa Espirita</span>
+                          </td>
+          </tr>
+          
+          <tr class="text-line phone-field">
+                                    <th>Telefone do Contato<span class="reqd">*</span></th>
+            <td id="pdb-phone-field" >
+              <input name="phone" class="required-field regular-text" type="text" value="" />
+                <span class="helptext">Telefone do administrador de dados da Casa Espírita</span>
+                          </td>
+          </tr>
+          
+          <tr class="text-line address-field">
+                                    <th>Endereço</th>
+            <td id="pdb-address-field" >
+              <input name="address" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line bairro-field">
+                                    <th>Bairro</th>
+            <td id="pdb-bairro-field" >
+              <input name="bairro" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line zip-field">
+                                    <th>CEP</th>
+            <td id="pdb-zip-field" >
+              <input name="zip" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line email-field">
+                                    <th>Email<span class="reqd">*</span></th>
+            <td id="pdb-email-field" >
+              <input name="email" class="required-field regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="dropdown virtual-field">
+                                    <th>Funcionamento Virtual<span class="reqd">*</span></th>
+            <td id="pdb-virtual-field" >
+              <select name="virtual" id="pdb-virtual-1" class="required-field">
+<option value="" selected="selected">&nbsp;</option>
+<option value="virtual">Sim</option>
+<option value="fisica">Não</option>
+</select>
+                <span class="helptext">Informe <em>sim</em> se a casa funciona somente pela internet; <em>não</em> se também tem instalações físicas.</span>
+                          </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-personal" >
+        <h3 class="field-group-title">Contatos</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="link website-field">
+                                    <th>Site</th>
+            <td id="pdb-website-field" >
+              <div class="link-element">
+<input name="website[]" placeholder="(URL)" id="pdb-website-1-url" type="url" value="" />
+<input name="website[]" placeholder="Texto do link" id="pdb-website-1-text" type="text" value="" /></div>
+                <span class="helptext">Informe a <em>URL</em> e o <em>nome do link</em></span>
+                          </td>
+          </tr>
+          
+          <tr class="text-line telefone-field">
+                                    <th>Telefone da Casa</th>
+            <td id="pdb-telefone-field" >
+              <input name="telefone" class=" regular-text" type="text" value="" />
+                <span class="helptext">Telefone da Casa Espírita</span>
+                          </td>
+          </tr>
+          
+          <tr class="multi-checkbox dias_de_reunião_pública-field">
+                                    <th>Dias de Reuniões Públicas</th>
+            <td id="pdb-dias_de_reunião_pública-field" >
+              <div class="multicheckbox">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunião_pública-1-default" type="hidden" value="" />
+<div class="checkbox-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Dias de Reuniões Públicas</legend>
+<label for="pdb-dias_de_reunio_pblica-seg-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-seg-1" type="checkbox" value="seg" />
+Segunda</label>
+<label for="pdb-dias_de_reunio_pblica-ter-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-ter-1" type="checkbox" value="ter" />
+Terça</label>
+<label for="pdb-dias_de_reunio_pblica-qua-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-qua-1" type="checkbox" value="qua" />
+Quarta</label>
+<label for="pdb-dias_de_reunio_pblica-qui-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-qui-1" type="checkbox" value="qui" />
+Quinta</label>
+<label for="pdb-dias_de_reunio_pblica-sex-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-sex-1" type="checkbox" value="sex" />
+Sexta</label>
+<label for="pdb-dias_de_reunio_pblica-sab-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-sab-1" type="checkbox" value="sab" />
+Sábado</label>
+<label for="pdb-dias_de_reunio_pblica-dom-1">
+<input name="dias_de_reunião_pública[]" id="pdb-dias_de_reunio_pblica-dom-1" type="checkbox" value="dom" />
+Domingo</label>
+</fieldset><!-- .no-border --></div><!-- .checkbox-group -->
+</div>
+            </td>
+          </tr>
+          
+          <tr class="text-line horários_da_reunião_pública-field">
+                                    <th>Hora das Reuniões Públicas</th>
+            <td id="pdb-horários_da_reunião_pública-field" >
+              <input name="horários_da_reunião_pública" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line detalhes_das_reuniões_públicas-field">
+                                    <th>Detalhes das Reuniões Públicas</th>
+            <td id="pdb-detalhes_das_reuniões_públicas-field" >
+              <input name="detalhes_das_reuniões_públicas" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-admin" >
+        <h3 class="field-group-title">Administrativo</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="checkbox mailing_list-field">
+                                    <th>Newsletter</th>
+            <td id="pdb-mailing_list-field" >
+              <input name="mailing_list" id="pdb-mailing_list-1-default" type="hidden" value="Não" />
+<input name="mailing_list" id="pdb-mailing_list-1" type="checkbox" value="Sim" />
+                <span class="helptext">Quer receber nossa newsletter por email?</span>
+                          </td>
+          </tr>
+          
+          <tr class="checkbox approved-field">
+                                    <th>Aprovado</th>
+            <td id="pdb-approved-field" >
+              <input name="approved" id="pdb-approved-1-default" type="hidden" value="no" />
+<input name="approved" id="pdb-approved-1" type="checkbox" value="yes" />
+            </td>
+          </tr>
+          
+          <tr class="text-line pdbgmap_latitude-field">
+                                    <th>Latitude <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-pdbgmap_latitude-field" >
+              <input name="pdbgmap_latitude" class=" regular-text readonly-field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line pdbgmap_longitude-field">
+                                    <th>Longitude <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-pdbgmap_longitude-field" >
+              <input name="pdbgmap_longitude" class=" regular-text readonly-field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line state-field">
+                                    <th>Estado <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-state-field" >
+              <input name="state" class=" regular-text readonly-field" type="text" value="Minas Gerais" />
+            </td>
+          </tr>
+          
+          <tr class="text-line country-field">
+                                    <th>País <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-country-field" >
+              <input name="country" class=" regular-text readonly-field" type="text" value="Brasil" />
+            </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-internal" >
+        <h3 class="field-group-title">Registro</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="text-line id-field">
+                                    <th>Record ID <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-id-field" >
+              <input name="id" readonly class=" regular-text readonly-field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line private_id-field">
+                                    <th>Private ID <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-private_id-field" >
+              <input name="private_id" readonly class=" regular-text readonly-field" type="text" value="PA31UK0" />
+            </td>
+          </tr>
+          
+          <tr class="timestamp date_recorded-field">
+                                    <th>Inscrito em</th>
+            <td id="pdb-date_recorded-field" >
+              <input name="date_recorded" disabled="disabled" class="timestamp_field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="timestamp date_updated-field">
+                                    <th>Atualizado em</th>
+            <td id="pdb-date_updated-field" >
+              <input name="date_updated" disabled="disabled" class="timestamp_field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="timestamp last_accessed-field">
+                                    <th>Last Accessed <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-last_accessed-field" >
+              <input name="last_accessed" disabled="disabled" class="readonly-field timestamp_field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line last_update_user-field">
+                                    <th>Quem atualizou<span class="reqd">*</span></th>
+            <td id="pdb-last_update_user-field" >
+              <input name="last_update_user" class="required-field regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="radio pdbgmap_geocoding_status-field">
+                                    <th>Geocoding Status</th>
+            <td id="pdb-pdbgmap_geocoding_status-field" >
+              <div class="radio-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Geocoding Status</legend>
+<label for="pdb-pdbgmap_geocoding_status-geocoded-1">
+<input name="pdbgmap_geocoding_status" id="pdb-pdbgmap_geocoding_status-geocoded-1" type="radio" value="geocoded" />
+Successfully geolocated</label>
+<label for="pdb-pdbgmap_geocoding_status-no_address-1">
+<input name="pdbgmap_geocoding_status" id="pdb-pdbgmap_geocoding_status-no_address-1" type="radio" value="no_address" />
+Address incomplete</label>
+<label for="pdb-pdbgmap_geocoding_status-not_yet_geocoded-1">
+<input name="pdbgmap_geocoding_status" id="pdb-pdbgmap_geocoding_status-not_yet_geocoded-1" type="radio" value="not_yet_geocoded" />
+Not yet geolocated</label>
+<label for="pdb-pdbgmap_geocoding_status-no_result-1">
+<input name="pdbgmap_geocoding_status" id="pdb-pdbgmap_geocoding_status-no_result-1" type="radio" value="no_result" />
+Could not be geolocated</label>
+<label for="pdb-pdbgmap_geocoding_status-errors-1">
+<input name="pdbgmap_geocoding_status" id="pdb-pdbgmap_geocoding_status-errors-1" type="radio" value="errors" />
+Errors in geolocation</label>
+</fieldset><!-- .no-border --></div><!-- .radio-group -->
+            </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-atividades" >
+        <h3 class="field-group-title">Atividades</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="multi-checkbox atividades-field">
+                                    <th>Atividades Gerais</th>
+            <td id="pdb-atividades-field" >
+              <div class="multicheckbox">
+<input name="atividades[]" id="pdb-atividades-1-default" type="hidden" value="" />
+<div class="checkbox-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Atividades Gerais</legend>
+<label for="pdb-atividades-reuniao_publica-1">
+<input name="atividades[]" id="pdb-atividades-reuniao_publica-1" type="checkbox" value="reuniao_publica" />
+Reuniões públicas</label>
+<label for="pdb-atividades-mocidade-1">
+<input name="atividades[]" id="pdb-atividades-mocidade-1" type="checkbox" value="mocidade" />
+Mocidade e Juventude</label>
+<label for="pdb-atividades-evangelizacao-1">
+<input name="atividades[]" id="pdb-atividades-evangelizacao-1" type="checkbox" value="evangelizacao" />
+Evangelização Infantil</label>
+<label for="pdb-atividades-atendimentofraterno-1">
+<input name="atividades[]" id="pdb-atividades-atendimentofraterno-1" type="checkbox" value="atendimentofraterno" />
+Atendimento Fraterno</label>
+<label for="pdb-atividades-reuniao_mediunica-1">
+<input name="atividades[]" id="pdb-atividades-reuniao_mediunica-1" type="checkbox" value="reuniao_mediunica" />
+Reuniões Mediúnicas</label>
+<label for="pdb-atividades-divulgacao-1">
+<input name="atividades[]" id="pdb-atividades-divulgacao-1" type="checkbox" value="divulgacao" />
+Divulgação da Doutrina</label>
+<label for="pdb-atividades-livraria-1">
+<input name="atividades[]" id="pdb-atividades-livraria-1" type="checkbox" value="livraria" />
+Livraria</label>
+<label for="pdb-atividades-magnetismo-1">
+<input name="atividades[]" id="pdb-atividades-magnetismo-1" type="checkbox" value="magnetismo" />
+Passe/Irradiação/Magnetismo</label>
+<label for="pdb-atividades-uniao-1">
+<input name="atividades[]" id="pdb-atividades-uniao-1" type="checkbox" value="uniao" />
+União dos Espíritas</label>
+<label for="pdb-atividades-unificacao-1">
+<input name="atividades[]" id="pdb-atividades-unificacao-1" type="checkbox" value="unificacao" />
+Unificação do Movimento Espírita</label>
+<label for="pdb-atividades-biblioteca-1">
+<input name="atividades[]" id="pdb-atividades-biblioteca-1" type="checkbox" value="biblioteca" />
+Biblioteca</label>
+</fieldset><!-- .no-border --></div><!-- .checkbox-group -->
+</div>
+                <span class="helptext">Para conhecer detalhes sobre atividades espíritas, leia o item 1.4 da <a href="https://drive.google.com/file/d/16exIEzzxezkX4ozFmR9Usn8W9bwP_cr8/view">Orientação ao Centro Espírita</a>.</span>
+                          </td>
+          </tr>
+          
+          <tr class="multi-checkbox reuniões_de_estudo-field">
+                                    <th>Reuniões de Estudo</th>
+            <td id="pdb-reuniões_de_estudo-field" >
+              <div class="multicheckbox">
+<input name="reuniões_de_estudo[]" id="pdb-reuniões_de_estudo-1-default" type="hidden" value="" />
+<div class="checkbox-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Reuniões de Estudo</legend>
+<label for="pdb-reunies_de_estudo-esde-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-esde-1" type="checkbox" value="esde" />
+Estudo Sistematizado da Doutrina Espirita (ESDE)</label>
+<label for="pdb-reunies_de_estudo-eade-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-eade-1" type="checkbox" value="eade" />
+Estudo Aprofundado da Doutrina Espirita (EADE)</label>
+<label for="pdb-reunies_de_estudo-miudinho-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-miudinho-1" type="checkbox" value="miudinho" />
+Estudo do Evangelho</label>
+<label for="pdb-reunies_de_estudo-estudomediunidade-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-estudomediunidade-1" type="checkbox" value="estudomediunidade" />
+Desenvolvimento Mediúnico</label>
+<label for="pdb-reunies_de_estudo-obras-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-obras-1" type="checkbox" value="obras" />
+Estudo de Obras</label>
+<label for="pdb-reunies_de_estudo-principiosbasicos-1">
+<input name="reuniões_de_estudo[]" id="pdb-reunies_de_estudo-principiosbasicos-1" type="checkbox" value="principiosbasicos" />
+Estudo dos Princípios Básicos da Doutrina Espirita</label>
+</fieldset><!-- .no-border --></div><!-- .checkbox-group -->
+</div>
+            </td>
+          </tr>
+          
+          <tr class="multi-checkbox tarefas_e_atividades_de_assistência-field">
+                                    <th>Tarefas de Assistência</th>
+            <td id="pdb-tarefas_e_atividades_de_assistência-field" >
+              <div class="multicheckbox">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistência-1-default" type="hidden" value="" />
+<div class="checkbox-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Tarefas de Assistência</legend>
+<label for="pdb-tarefas_e_atividades_de_assistncia-cestabasica-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-cestabasica-1" type="checkbox" value="cestabasica" />
+Cesta básica</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-sopa-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-sopa-1" type="checkbox" value="sopa" />
+Sopa fraterna</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-alimento-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-alimento-1" type="checkbox" value="alimento" />
+Distribuição de Alimento (Marmitex - Pãozinho)</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-agasalho-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-agasalho-1" type="checkbox" value="agasalho" />
+Campanha do agasalho</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-quilo-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-quilo-1" type="checkbox" value="quilo" />
+Campanha do quilo</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-bazar-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-bazar-1" type="checkbox" value="bazar" />
+Bazar Brechó</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-enxovalbebe-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-enxovalbebe-1" type="checkbox" value="enxovalbebe" />
+Enxoval bebê</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-banho-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-banho-1" type="checkbox" value="banho" />
+Banho pessoa em situação de Rua</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-melhoridade-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-melhoridade-1" type="checkbox" value="melhoridade" />
+Atendimento Melhor Idade</label>
+<label for="pdb-tarefas_e_atividades_de_assistncia-visitafraterna-1">
+<input name="tarefas_e_atividades_de_assistência[]" id="pdb-tarefas_e_atividades_de_assistncia-visitafraterna-1" type="checkbox" value="visitafraterna" />
+Visita Fraterna</label>
+</fieldset><!-- .no-border --></div><!-- .checkbox-group -->
+</div>
+            </td>
+          </tr>
+          
+          <tr class="multi-select-other atividades_especializadas-field">
+                                    <th>Atividades Especializadas</th>
+            <td id="pdb-atividades_especializadas-field" >
+              <div class="selectother checkbox-other-control-group">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-1-default" type="hidden" value="" />
+<div class="checkbox-group">
+<fieldset class="no-border">
+<legend class="screen-reader-text">Atividades Especializadas</legend>
+<label for="pdb-atividades_especializadas-cursos-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-cursos-1" type="checkbox" value="cursos" />
+Cursos</label>
+<label for="pdb-atividades_especializadas-oficinas-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-oficinas-1" type="checkbox" value="oficinas" />
+Oficinas Profissionalizantes</label>
+<label for="pdb-atividades_especializadas-medico-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-medico-1" type="checkbox" value="medico" />
+Atendimento médico</label>
+<label for="pdb-atividades_especializadas-psicologo-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-psicologo-1" type="checkbox" value="psicologo" />
+Atendimento psicológico</label>
+<label for="pdb-atividades_especializadas-artesanato-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-artesanato-1" type="checkbox" value="artesanato" />
+Artesanato</label>
+<label for="pdb-atividades_especializadas-juridico-1">
+<input name="atividades_especializadas[]" id="pdb-atividades_especializadas-juridico-1" type="checkbox" value="juridico" />
+Apoio Jurídico</label>
+<div class="othercontrol">
+<label for="pdb-atividades_especializadas-1_otherselect">
+<input type="checkbox" name="pdb-otherselector" value="outro" id="pdb-atividades_especializadas-1_otherselect" class="otherselect" />
+outro:
+</label>
+<input type="text" name="atividades_especializadas[other]" value="" id="pdb-atividades_especializadas-1_other" class="otherfield" />
+</div><!-- .othercontrol -->
+</fieldset><!-- .no-border --></div><!-- .checkbox-group -->
+</div><!-- .checkbox-other-control-group -->
+            </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-federativo" >
+        <h3 class="field-group-title">Federativo</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="text-line regional-field">
+                                    <th>Regional <span class="fieldnote">somente leitura</span></th>
+            <td id="pdb-regional-field" >
+              <input name="regional" class=" regular-text readonly-field" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="text-line ame-field">
+                                    <th>AME - Aliança Municipal Espírita</th>
+            <td id="pdb-ame-field" >
+              <input name="ame" class=" regular-text" type="text" value="" />
+            </td>
+          </tr>
+          
+          <tr class="dropdown cre-field">
+                                    <th>CRE - Conselho Regional Espírita</th>
+            <td id="pdb-cre-field" >
+              <select name="cre" id="pdb-cre-1">
+<option value="" selected="selected">&nbsp;</option>
+<option value="1º CRE">1º CRE</option>
+<option value="2º CRE">2º CRE</option>
+<option value="3º CRE">3º CRE</option>
+<option value="4º CRE">4º CRE</option>
+<option value="5º CRE">5º CRE</option>
+<option value="6º CRE">6º CRE</option>
+<option value="7º CRE">7º CRE</option>
+<option value="8º CRE">8º CRE</option>
+<option value="9º CRE">9º CRE</option>
+<option value="10º CRE">10º CRE</option>
+<option value="11º CRE">11º CRE</option>
+<option value="12º CRE">12º CRE</option>
+<option value="13º CRE">13º CRE</option>
+<option value="14º CRE">14º CRE</option>
+<option value="15º CRE">15º CRE</option>
+<option value="16º CRE">16º CRE</option>
+<option value="17º CRE">17º CRE</option>
+<option value="18º CRE">18º CRE</option>
+<option value="19º CRE">19º CRE</option>
+<option value="20º CRE">20º CRE</option>
+<option value="21º CRE">21º CRE</option>
+<option value="22º CRE">22º CRE</option>
+<option value="23º CRE">23º CRE</option>
+<option value="24º CRE">24º CRE</option>
+<option value="25º CRE">25º CRE</option>
+<option value="26º CRE">26º CRE</option>
+<option value="27º CRE">27º CRE</option>
+<option value="28º CRE">28º CRE</option>
+<option value="29º CRE">29º CRE</option>
+</select>
+                <span class="helptext">Caso tenha dúvidas, veja a <a href="https://casas.uemmg.org.br/cidades-e-cres/" target="_new">Relação de Cidades e CREs</a>.</span>
+                          </td>
+          </tr>
+                      </table>
+        </div>
+              <div  class="field-group field-group-desenvolvimento" >
+        <h3 class="field-group-title">DESENVOLVIMENTO</h3>
+                <table class="form-table">
+          <tbody>
+            
+          <tr class="checkbox theme-field">
+                                    <th>theme</th>
+            <td id="pdb-theme-field" >
+              <input name="theme" id="pdb-theme-1-default" type="hidden" value="" />
+<input name="theme" checked="checked" id="pdb-theme-1" type="checkbox" value="" />
+            </td>
+          </tr>
+                </tbody>
+    </table>
+  </div>
+  <div  class="field-group field-group-submit" >
+    <h3 class="field-group-title">Salve o registro</h3>
+    <table class="form-table">
+      <tbody>
+                  <tr>
+            <td class="submit-buttons">
+              <input class="button button-primary" type="submit" value="Enviar" name="submit_button">
+<input class="button button-primary" type="submit" value="Aplicar" name="submit_button">
+<input class="button button-default button-rightarrow" type="submit" value="Novo" name="submit_button">
+            </td>
+          </tr>
+          <tr>
+            <td >
+              <strong>Enviar:</strong> salva o registro e retorna à lista</br><strong>Aplicar:</strong> salve o registro e continue com o mesmo registro</br><strong>Novo:</strong> salve o registro e depois inicie um novo            </td>
+          </tr>
+              </tbody>
+    </table>
+  </form>
+  </div>
+  
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou">Obrigado por criar com <a href="https://br.wordpress.org/">WordPress</a>.</span>	</p>
+	<p id="footer-upgrade" class="alignright">
+		Versão 6.9.4	</p>
+	<div class="clear"></div>
+</div>
+	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<button type="button" class="wp-auth-check-close button-link"><span class="screen-reader-text">
+		Fechar janela	</span></button>
+			<div id="wp-auth-check-form" class="loading" data-src="https://casas.uemmg.org.br/wp-login.php?interim-login=1&#038;wp_lang=pt_BR"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">A sessão expirou</b></p>
+		<p><a href="https://casas.uemmg.org.br/wp-login.php" target="_blank">Acesse novamente.</a>
+		A página de login será aberta em uma nova janela. Depois de logar você pode fechá-la e voltar a esta página.</p>
+	</div>
+	</div>
+	</div>
+	<link rel='stylesheet' href='https://casas.uemmg.org.br/wp-admin/load-styles.php?c=0&amp;dir=ltr&amp;load%5Bchunk_0%5D=editor-buttons&amp;ver=6.9.4' type="text/css" media='all' />
+<style type="text/css">
+@media print { #wpadminbar { display:none; } }
+/*# sourceURL=css-inline-concat-editor-buttons */
+</style>
+<script type='text/javascript' src='https://casas.uemmg.org.br/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=hoverIntent,wp-dom-ready,wp-hooks&amp;ver=6.9.4'></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Notifications":["Notifica\u00e7\u00f5es"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script id="common-js-extra">
+var bulkActionObserverIds = {"bulk_action":"action","changeit":"new_role"};
+//# sourceURL=common-js-extra
+</script>
+<script id="common-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-12-02 18:21:27+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Collapse Main menu":["Recolher menu principal"],"Expand Main menu":["Expandir menu principal"],"Please select at least one item to perform this action on.":["Selecione ao menos um item para realizar esta a\u00e7\u00e3o."],"You are about to permanently delete these items from your site.\nThis action cannot be undone.\n'Cancel' to stop, 'OK' to delete.":["Voc\u00ea est\u00e1 prestes a excluir permanentemente estes itens do seu site.\nEsta a\u00e7\u00e3o n\u00e3o pode ser desfeita.\n'Cancelar' para parar, 'OK' para excluir."],"Screen Options updated.":["Op\u00e7\u00f5es da tela atualizadas."],"%1$s is deprecated since version %2$s with no alternative available.":["%1$s est\u00e1 obsoleto desde a vers\u00e3o %2$s sem nenhuma alternativa dispon\u00edvel."],"%1$s is deprecated since version %2$s! Use %3$s instead.":["%1$s est\u00e1 obsoleto desde a vers\u00e3o %2$s! Use %3$s em seu lugar."],"Dismiss this notice.":["Dispensar este aviso."]}},"comment":{"reference":"wp-admin\/js\/common.js"}} );
+//# sourceURL=common-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-admin/js/common.min.js?ver=6.9.4" id="common-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/admin-bar.min.js?ver=6.9.4" id="admin-bar-js"></script>
+<script src="https://casas.uemmg.org.br/wp-admin/js/svg-painter.js?ver=6.9.4" id="svg-painter-js"></script>
+<script id="heartbeat-js-extra">
+var heartbeatSettings = {"nonce":"4af432af3c"};
+//# sourceURL=heartbeat-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/heartbeat.min.js?ver=6.9.4" id="heartbeat-js"></script>
+<script id="wp-auth-check-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Your session has expired. You can log in again from this page or go to the login page.":["A sua sess\u00e3o expirou. Voc\u00ea pode fazer o login novamente aqui ou ir para a p\u00e1gina de login."]}},"comment":{"reference":"wp-includes\/js\/wp-auth-check.js"}} );
+//# sourceURL=wp-auth-check-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/wp-auth-check.min.js?ver=6.9.4" id="wp-auth-check-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/vendor/react-jsx-runtime.min.js?ver=18.3.1" id="react-jsx-runtime-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/deprecated.min.js?ver=e1f84915c5e8ae38964c" id="wp-deprecated-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/dom.min.js?ver=26edef3be6483da3de2e" id="wp-dom-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/element.min.js?ver=6a582b0c827fa25df3dd" id="wp-element-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/is-shallow-equal.min.js?ver=e0f9f1d78d83f5196979" id="wp-is-shallow-equal-js"></script>
+<script id="wp-keycodes-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Comma":["V\u00edrgula"],"Period":["Ponto"],"Backtick":["Acento grave"],"Tilde":["Til"]}},"comment":{"reference":"wp-includes\/js\/dist\/keycodes.js"}} );
+//# sourceURL=wp-keycodes-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/keycodes.min.js?ver=34c8fb5e7a594a1c8037" id="wp-keycodes-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/priority-queue.min.js?ver=2d59d091223ee9a33838" id="wp-priority-queue-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/compose.min.js?ver=7a9b375d8c19cf9d3d9b" id="wp-compose-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1" id="moment-js"></script>
+<script id="moment-js-after">
+moment.updateLocale( 'pt_BR', {"months":["janeiro","fevereiro","mar\u00e7o","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],"monthsShort":["jan","fev","mar","abr","maio","jun","jul","ago","set","out","nov","dez"],"weekdays":["domingo","segunda-feira","ter\u00e7a-feira","quarta-feira","quinta-feira","sexta-feira","s\u00e1bado"],"weekdaysShort":["dom","seg","ter","qua","qui","sex","s\u00e1b"],"week":{"dow":1},"longDateFormat":{"LT":"H:i","LTS":null,"L":null,"LL":"d/m/Y","LLL":"j \\d\\e F \\d\\e Y, H:i","LLLL":null}} );
+//# sourceURL=moment-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/date.min.js?ver=795a56839718d3ff7eae" id="wp-date-js"></script>
+<script id="wp-date-js-after">
+wp.date.setSettings( {"l10n":{"locale":"pt_BR","months":["janeiro","fevereiro","mar\u00e7o","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],"monthsShort":["jan","fev","mar","abr","maio","jun","jul","ago","set","out","nov","dez"],"weekdays":["domingo","segunda-feira","ter\u00e7a-feira","quarta-feira","quinta-feira","sexta-feira","s\u00e1bado"],"weekdaysShort":["dom","seg","ter","qua","qui","sex","s\u00e1b"],"meridiem":{"am":"am","pm":"pm","AM":"AM","PM":"PM"},"relative":{"future":"daqui a %s","past":"%s atr\u00e1s","s":"um segundo","ss":"%d segundos","m":"um minuto","mm":"%d minutos","h":"uma hora","hh":"%d horas","d":"um dia","dd":"%d dias","M":"um m\u00eas","MM":"%d meses","y":"um ano","yy":"%d anos"},"startOfWeek":1},"formats":{"time":"H:i","date":"d/m/Y","datetime":"j \\d\\e F \\d\\e Y, H:i","datetimeAbbreviated":"j \\d\\e M \\d\\e Y, g:i a"},"timezone":{"offset":-3,"offsetFormatted":"-3","string":"","abbr":""}} );
+//# sourceURL=wp-date-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/html-entities.min.js?ver=e8b78b18a162491d5e5f" id="wp-html-entities-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/primitives.min.js?ver=0b5dcc337aa7cbf75570" id="wp-primitives-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/private-apis.min.js?ver=4f465748bda624774139" id="wp-private-apis-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/redux-routine.min.js?ver=8bb92d45458b29590f53" id="wp-redux-routine-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/data.min.js?ver=f940198280891b0b6318" id="wp-data-js"></script>
+<script id="wp-data-js-after">
+( function() {
+	var userId = 3;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+//# sourceURL=wp-data-js-after
+</script>
+<script id="wp-rich-text-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"%s removed.":["%s exclu\u00eddo."],"%s applied.":["%s aplicado."]}},"comment":{"reference":"wp-includes\/js\/dist\/rich-text.js"}} );
+//# sourceURL=wp-rich-text-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/rich-text.min.js?ver=5bdbb44f3039529e3645" id="wp-rich-text-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/warning.min.js?ver=d69bc18c456d01c11d5a" id="wp-warning-js"></script>
+<script id="wp-components-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Font size":["Tamanho da fonte"],"Item selected.":["Item selecionado."],"Hours":["Horas"],"Custom color picker":["Seletor de cor personalizada"],"Color code: %s":["C\u00f3digo de cor: %s"],"Minutes":["Minutos"],"Item added.":["Item adicionado."],"Item removed.":["Item removido."],"Remove item":["Remover item"],"Dismiss this notice":["Dispensar essa notifica\u00e7\u00e3o"],"Number of items":["N\u00famero de itens"],"Separate with commas, spaces, or the Enter key.":["Separe com v\u00edrgulas, espa\u00e7os, ou a tecla Enter."],"Separate with commas or the Enter key.":["Separe com v\u00edrgulas ou com a tecla Enter."],"Angle":["\u00c2ngulo"],"Extra Large":["Extra grande"],"Gradient control point at position %1$d%% with color code %2$s.":["Ponto de controle do gradiente na posi\u00e7\u00e3o %1$d%% com o c\u00f3digo de cor %2$s."],"Use your left or right arrow keys or drag and drop with the mouse to change the gradient position. Press the button to change the color or remove the control point.":["Use as teclas de seta esquerda ou direita ou arraste com o mouse para alterar a posi\u00e7\u00e3o do gradiente. Pressione o bot\u00e3o para alterar a cor ou remover o ponto de controle."],"Remove Control Point":["Remover ponto de controle"],"Gradient code: %s":["C\u00f3digo de gradiente: %s"],"Gradient: %s":["Gradiente: %s"],"Guide controls":["Controles do guia"],"Page %1$d of %2$d":["P\u00e1gina %1$d de %2$d"],"Finish":["Concluir"],"Solid":["S\u00f3lido"],"Top Center":["Centro superior"],"Center Left":["Centro \u00e0 esquerda"],"Center Right":["Centro \u00e0 direita"],"Bottom Center":["Centro inferior"],"Alignment Matrix Control":["Controle da matriz de alinhamento"],"Box Control":["Caixa de controle"],"Reset search":["Redefinir pesquisa"],"Color name":["Nome da cor"],"Coordinated Universal Time":["Hor\u00e1rio Universal Coordenado"],"Media preview":["Pr\u00e9-visualiza\u00e7\u00e3o da m\u00eddia"],"Linear":["Linear"],"Radial":["Radial"],"Select unit":["Selecionar unidade"],"Search in %s":["Pesquisar em %s"],"Close search":["Fechar pesquisa"],"Percentage (%)":["Porcentagem (%)"],"Pixels (px)":["P\u00edxeis (px)"],"Relative to parent font size (em)":["Tamanho relativo do elemento ascendente (em)"],"Relative to root font size (rem)":["Tamanho relativo da fonte do elemento raiz (rem)"],"Viewport width (vw)":["Largura da visualiza\u00e7\u00e3o (vh)"],"Viewport height (vh)":["Altura da visualiza\u00e7\u00e3o (vh)"],"Dashed":["Tracejado"],"Dotted":["Pontilhado"],"Border width":["Largura da borda"],"Percent (%)":["Porcentagem (%)"],"Viewport smallest dimension (vmin)":["Largura m\u00ednima da viewport (vmin)"],"Viewport largest dimension (vmax)":["Largura m\u00e1xima da viewport (vmax)"],"Width of the zero (0) character (ch)":[" Largura do caractere zero (ch)"],"x-height of the font (ex)":["altura-x da fonte (ex)"],"Centimeters (cm)":["Cent\u00edmetros (cm)"],"Millimeters (mm)":["Mil\u00edmetros (mm)"],"Inches (in)":["Polegadas (in)"],"Picas (pc)":["Paicas (pc)"],"Points (pt)":["Pontos (pt)"],"Relative to parent font size (em)\u0004ems":["ems"],"Relative to root font size (rem)\u0004rems":["rems"],"%1$s. There is %2$d event":["%1$s. H\u00e1 %2$d evento","%1$s. H\u00e1 %2$d eventos"],"Duotone code: %s":["C\u00f3digo de duotone: %s"],"Duotone: %s":["Duotone: %s"],"Shadows":["Sombras"],"Invalid item":["Item inv\u00e1lido"],"Hex color":["Cor hexadecimal"],"Color format":["Formato de cor"],"Color %d":["Cor %d"],"Gradient name":["Nome do gradiente"],"Add gradient":["Adicionar gradiente"],"Add color":["Adicionar cor"],"Gradient options":["Op\u00e7\u00f5es do gradiente"],"Color options":["Op\u00e7\u00f5es de cor"],"Remove all gradients":["Remover todos os gradientes"],"Remove all colors":["Remover todas as cores"],"Reset gradient":["Redefinir gradiente"],"Reset colors":["Redefinir cores"],"Currently selected: %s":["Selecionado no momento: %s"],"Size of a UI element\u0004None":["Nenhum"],"Size of a UI element\u0004Small":["Pequeno"],"Size of a UI element\u0004Medium":["M\u00e9dio"],"Size of a UI element\u0004Large":["Grande"],"Size of a UI element\u0004Extra Large":["Extra grande"],"Highlights":["Destaques"],"Currently selected font size: %s":["Tamanho da fonte selecionado no momento: %s"],"Search %s":["Pesquisar %s"],"Reset %s":["Redefinir %s"],"Hide and reset %s":["Ocultar e redefinir %s"],"Button label to reveal tool panel options\u0004%s options":["Op\u00e7\u00f5es de %s"],"Reset all":["Redefinir todos"],"Custom color picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["Seletor de cor personalizada. A cor selecionada no momento \u00e9 chamada de \"%1$s\" e tem um valor de \"%2$s\"."],"Border color and style picker.":["Seletor de cor e estilo da borda."],"Border color picker.":["Seletor de cor da borda."],"Top border":["Borda superior"],"Left border":["Borda esquerda"],"Right border":["Borda direita"],"Bottom border":["Borda inferior"],"All sides":["Todos os lados"],"Loading \u2026":["Carregando..."],"Border color and style picker":["Seletor de cor e estilo da borda."],"View previous month":["Ver m\u00eas anterior"],"View next month":["Ver pr\u00f3ximo m\u00eas"],"%1$s. Selected. There is %2$d event":["%1$s. Selecionado. H\u00e1 %2$d evento","%1$s. Selecionado. H\u00e1 %2$d eventos"],"%1$s. Selected":["%1$s. Selecionado"],"S":["P"],"M":["M"],"L":["G"],"XL":["GG"],"XXL":["GGG"],"%s reset to default":["%s redefinir para o padr\u00e3o"],"%s hidden and reset to default":["%s ocultar e redefinir para o padr\u00e3o"],"%s is now visible":["%s agora est\u00e1 vis\u00edvel"],"All options are currently hidden":["Todas as op\u00e7\u00f5es est\u00e3o escondidas no momento"],"All options reset":["Redefinir todas as op\u00e7\u00f5es."],"Increment":["Aumentar"],"Decrement":["Diminuir"],"Show details":["Mostrar detalhes"],"Extra Extra Large":["Extra extra grande"],"Initial %d result loaded. Type to filter all available results. Use up and down arrow keys to navigate.":["%d resultado carregado. Digite para filtrar todo os resultados dispon\u00edveis. Use as teclas de seta para cima e para baixo para navegar.","%d resultados carregados. Digite para filtrar todo os resultados dispon\u00edveis. Use as teclas de seta para cima e para baixo para navegar."],"Scrollable section":["Se\u00e7\u00e3o rol\u00e1vel"],"Focal point left position":["Posi\u00e7\u00e3o esquerda do ponto focal"],"Focal point top position":["Posi\u00e7\u00e3o superior do ponto focal"],"Warning notice":["Aviso de alerta"],"Information notice":["Aviso de informa\u00e7\u00e3o"],"Error notice":["Aviso de erro"],"Notice":["Aviso"],"No color selected":["Nenhuma cor selecionada"],"Small viewport width (svw)":["Largura da janela de exibi\u00e7\u00e3o pequena (svw)"],"Small viewport height (svh)":["Altura da janela de exibi\u00e7\u00e3o pequena (svh)"],"Viewport smallest size in the inline direction (svi)":["Menor tamanho da janela de exibi\u00e7\u00e3o na dire\u00e7\u00e3o em linha (svi)"],"Small viewport width or height (svi)":["Largura ou altura da janela de exibi\u00e7\u00e3o pequena (svi)"],"Viewport smallest size in the block direction (svb)":["Menor tamanho da janela de exibi\u00e7\u00e3o na dire\u00e7\u00e3o do bloco (svb)"],"Small viewport width or height (svb)":["Largura ou altura da janela de exibi\u00e7\u00e3o pequena (svb)"],"Small viewport smallest dimension (svmin)":["Menor dimens\u00e3o da janela de exibi\u00e7\u00e3o pequena (svmin)"],"Large viewport width (lvw)":["Largura da janela de exibi\u00e7\u00e3o grande (lvw)"],"Large viewport height (lvh)":["Altura da janela de exibi\u00e7\u00e3o grande (lvh)"],"Large viewport width or height (lvi)":["Largura ou altura da janela de exibi\u00e7\u00e3o grande (lvi)"],"Large viewport width or height (lvb)":["Menor dimens\u00e3o da janela de exibi\u00e7\u00e3o grande (lvmin)"],"Large viewport smallest dimension (lvmin)":["Menor dimens\u00e3o da janela de exibi\u00e7\u00e3o grande (lvmin)"],"Dynamic viewport width (dvw)":["Largura da janela de exibi\u00e7\u00e3o din\u00e2mica (dvw)"],"Dynamic viewport height (dvh)":["Altura da janela de exibi\u00e7\u00e3o din\u00e2mica (dvh)"],"Dynamic viewport width or height (dvi)":["Largura ou altura da janela de exibi\u00e7\u00e3o din\u00e2mica (dvi)"],"Dynamic viewport width or height (dvb)":["Largura ou altura da janela de exibi\u00e7\u00e3o din\u00e2mica (dvb)"],"Dynamic viewport smallest dimension (dvmin)":["Menor dimens\u00e3o da janela de exibi\u00e7\u00e3o din\u00e2mica (dvmin)"],"Dynamic viewport largest dimension (dvmax)":["Maior dimens\u00e3o da janela de exibi\u00e7\u00e3o din\u00e2mica (dvmax)"],"Small viewport largest dimension (svmax)":["Maior dimens\u00e3o da janela de exibi\u00e7\u00e3o pequena (svmax)"],"Large viewport largest dimension (lvmax)":["Maior dimens\u00e3o da janela de exibi\u00e7\u00e3o grande (lvmax)"],"Top side":["Parte superior"],"Bottom side":["Parte inferior"],"Left side":["Lado esquerdo"],"Right side":["Lado direito"],"Top and bottom sides":["Lados superior e inferior"],"Left and right sides":["Lados esquerdo e direito"],"Edit: %s":["Editar: %s"],"categories\u0004All":["Todas"],"authors\u0004All":["Todos"],"Remove color: %s":["Remover cor: %s"],"No items found":["Nenhum item encontrado"],"Select an item":["Selecionar um item"],"Select AM or PM":["Selecione AM ou PM"],"%d item selected":["%d item selecionado","%d itens selecionados"],"Border color and style picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\". The currently selected style is \"%3$s\".":["Seletor de cor e estilo de borda. A cor selecionada no momento \u00e9 chamada de \"%1$s\" e tem o valor \"%2$s\". O estilo selecionado no momento \u00e9 \"%3$s\"."],"Border color and style picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["Seletor de cor e estilo de borda. A cor selecionada no momento \u00e9 chamada de \"%1$s\" e tem o valor \"%2$s\"."],"Border color and style picker. The currently selected color has a value of \"%1$s\". The currently selected style is \"%2$s\".":["Seletor de cor e estilo de borda. A cor selecionada no momento tem o valor \"%1$s\". O estilo selecionado no momento \u00e9 \"%2$s\"."],"Border color and style picker. The currently selected color has a value of \"%s\".":["Seletor de cor e estilo de borda. A cor selecionada no momento tem o valor \"%s\"."],"Border color picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["Seletor de cor de borda. A cor selecionada no momento \u00e9 chamada de \"%1$s\" e tem o valor \"%2$s\"."],"Border color picker. The currently selected color has a value of \"%s\".":["Seletor de cor de borda. A cor selecionada no momento tem o valor \"%s\"."],"input control\u0004Show %s":["Mostrar %s"],"Date calendar":["Calend\u00e1rio de datas"],"Date range calendar":["Calend\u00e1rio de intervalo de datas"],"Today, %s":["Hoje, %s"],"Go to the Next Month":["Ir para o pr\u00f3ximo m\u00eas"],"Go to the Previous Month":["Ir para o m\u00eas anterior"],"%s, selected":["%s, selecionado"],"Optional":["Opcional"],"Type":["Tipo"],"%d result found, use up and down arrow keys to navigate.":["%d resultado encontrado, use as setas para cima e para baixo para navegar.","%d resultados encontrados, use as setas para cima e para baixo para navegar"],"No results.":["Nenhum resultado."],"Add item":["Adicionar item"],"Order by":["Ordernar por"],"Newest to oldest":["Do mais recente para o mais antigo"],"Oldest to newest":["Do mais antigo para o mais recente"],"Reset":["Redefinir"],"A \u2192 Z":["De A \u00e0 Z"],"Z \u2192 A":["De Z \u00e0 A"],"Category":["Categoria"],"%d result found.":["%d resultado encontrado.","%d resultados encontrados."],"%1$s (%2$d of %3$d)":["%1$s (%2$d de %3$d)"],"Use size preset":["Use tamanho preestabelecido"],"Set custom size":["Definir tamanho personalizado"],"Unlink sides":["Desconectar lados"],"Link sides":["Conectar lados"],"Unset":["N\u00e3o definido"],"Required":["Obrigat\u00f3rio"],"Calendar":["Agenda"],"Custom":["Personalizado"],"Mixed":["Misturado"],"None":["Nenhum"],"Previous":["Anterior"],"Clear":["Limpar"],"Drop files to upload":["Solte arquivos aqui para enviar"],"Copied!":["Copiado!"],"Author":["Autor"],"Done":["Conclu\u00eddo"],"Cancel":["Cancelar"],"Left":["Esquerda"],"Center":["Centro"],"OK":["OK"],"Default":["Padr\u00e3o"],"No results found.":["Nenhum resultado encontrado."],"January":["janeiro"],"February":["fevereiro"],"March":["mar\u00e7o"],"April":["abril"],"May":["maio"],"June":["junho"],"July":["julho"],"August":["agosto"],"September":["setembro"],"October":["outubro"],"November":["novembro"],"December":["dezembro"],"Copy":["Copiar"],"Top":["Topo"],"Top Left":["Em cima \u00e0 esquerda"],"Top Right":["Em cima \u00e0 direita"],"Bottom Left":["Em baixo \u00e0 esquerda"],"Bottom Right":["Em baixo \u00e0 direita"],"AM":["AM"],"PM":["PM"],"Next":["Seguinte"],"Style":["Estilo"],"Back":["Voltar"],"Year":["Ano"],"Date":["Data"],"Month":["M\u00eas"],"Day":["Dia"],"Time":["Hora"],"(opens in a new tab)":["(abrir em uma nova aba)"],"Small":["Pequeno"],"Categories":["Categorias"],"Medium":["M\u00e9dio"],"Search":["Pesquisar"],"Close":["Fechar"],"Large":["Grande"]}},"comment":{"reference":"wp-includes\/js\/dist\/components.js"}} );
+//# sourceURL=wp-components-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/components.min.js?ver=0d72a218dfea8f6f442f" id="wp-components-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/keyboard-shortcuts.min.js?ver=fbc45a34ce65c5723afa" id="wp-keyboard-shortcuts-js"></script>
+<script id="wp-commands-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Open the command palette.":["Abre a paleta de comandos."],"Command palette":["Paleta de comandos"],"Command suggestions":["Sugest\u00f5es de comando"],"Search commands and settings":["Pesquisar comandos e configura\u00e7\u00f5es"],"No results found.":["Nenhum resultado encontrado."]}},"comment":{"reference":"wp-includes\/js\/dist\/commands.js"}} );
+//# sourceURL=wp-commands-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/commands.min.js?ver=cac8f4817ab7cea0ac49" id="wp-commands-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/url.min.js?ver=9e178c9516d1222dc834" id="wp-url-js"></script>
+<script id="wp-api-fetch-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"The response is not a valid JSON response.":["A resposta n\u00e3o \u00e9 um JSON v\u00e1lido."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["Falha ao enviar a m\u00eddia. Se for uma foto ou imagem grande, reduza o tamanho e tente novamente."],"Unable to connect. Please check your Internet connection.":["N\u00e3o foi poss\u00edvel se conectar. Verifique sua conex\u00e3o \u00e0 internet."],"Could not get a valid response from the server.":["N\u00e3o foi poss\u00edvel obter uma resposta v\u00e1lida do servidor."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+//# sourceURL=wp-api-fetch-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/api-fetch.min.js?ver=3a4d9af2b423048b0dee" id="wp-api-fetch-js"></script>
+<script id="wp-api-fetch-js-after">
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://casas.uemmg.org.br/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "fcb1406ba5" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://casas.uemmg.org.br/wp-admin/admin-ajax.php?action=rest-nonce";
+//# sourceURL=wp-api-fetch-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/blob.min.js?ver=9113eed771d446f4a556" id="wp-blob-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/block-serialization-default-parser.min.js?ver=14d44daebf663d05d330" id="wp-block-serialization-default-parser-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/autop.min.js?ver=9fb50649848277dd318d" id="wp-autop-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/shortcode.min.js?ver=0b3174183b858f2df320" id="wp-shortcode-js"></script>
+<script id="wp-blocks-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Embeds":["C\u00f3digos incorporados"],"Reusable blocks":["Blocos reutiliz\u00e1veis"],"%1$s Block. Row %2$d. %3$s":["Bloco %1$s. Linha %2$d. %3$s"],"%1$s Block. Column %2$d. %3$s":["Bloco %1$s. Coluna %2$d. %3$s"],"%1$s Block. Column %2$d":["Bloco %1$s. Coluna %2$d"],"%1$s Block. %2$s":["Bloco %1$s. %2$s"],"%s Block":["Bloco %s"],"Design":["Design"],"%1$s Block. Row %2$d":["Bloco %1$s. Linha %2$d"],"Text":["Texto"],"Theme":["Tema"],"Media":["M\u00eddia"],"Widgets":["Widgets"]}},"comment":{"reference":"wp-includes\/js\/dist\/blocks.js"}} );
+//# sourceURL=wp-blocks-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/blocks.min.js?ver=57eca4d23daac7159d88" id="wp-blocks-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/notices.min.js?ver=f62fbf15dcc23301922f" id="wp-notices-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/preferences-persistence.min.js?ver=e954d3a4426d311f7d1a" id="wp-preferences-persistence-js"></script>
+<script id="wp-preferences-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Preference deactivated - %s":["Prefer\u00eancia desativada - %s"],"Preference activated - %s":["Prefer\u00eancia ativada - %s"],"Preferences":["Prefer\u00eancias"],"Back":["Voltar"]}},"comment":{"reference":"wp-includes\/js\/dist\/preferences.js"}} );
+//# sourceURL=wp-preferences-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/preferences.min.js?ver=2ca086aed510c242a1ed" id="wp-preferences-js"></script>
+<script id="wp-preferences-js-after">
+( function() {
+				var serverData = {"core/edit-post":{"welcomeGuide":false,"fullscreenMode":false},"_modified":"2025-12-08T18:59:56.563Z","core/customize-widgets":{"welcomeGuide":false},"core/block-editor":{"linkControlSettingsDrawer":true},"core":{"openPanels":["discussion-panel","page-attributes","featured-image"],"isComplementaryAreaVisible":true,"editorMode":"visual","distractionFree":false,"fixedToolbar":false},"core/edit-widgets":{"isComplementaryAreaVisible":true,"welcomeGuide":false},"core/edit-site":{"welcomeGuide":false,"welcomeGuidePage":false}};
+				var userId = "3";
+				var persistenceLayer = wp.preferencesPersistence.__unstableCreatePersistenceLayer( serverData, userId );
+				var preferencesStore = wp.preferences.store;
+				wp.data.dispatch( preferencesStore ).setPersistenceLayer( persistenceLayer );
+			} ) ();
+//# sourceURL=wp-preferences-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/style-engine.min.js?ver=7c6fcedc37dadafb8a81" id="wp-style-engine-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/token-list.min.js?ver=cfdf635a436c3953a965" id="wp-token-list-js"></script>
+<script id="wp-block-editor-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Attributes":["Atributos"],"Delete":["Excluir"],"Submit":["Enviar"],"Scale":["Redimensionar"],"Edit link":["Editar link"],"Search results for \"%s\"":["Resultados da pesquisa por \"%s\""],"Insert":["Inserir"],"Align text":["Alinhar texto"],"Type":["Tipo"],"Background":["Fundo"],"Hidden":["Oculto"],"Justify text":["Justificar texto"],"Sorry, you are not allowed to edit images on this site.":["Sem permiss\u00e3o para editar imagens neste site."],"%s: This file exceeds the maximum upload size for this site.":["%s: este arquivo excede o tamanho m\u00e1ximo de envio para este site."],"Styles":["Estilos"],"Front page":["P\u00e1gina principal"],"text color":["cor do texto"],"Clear selection.":["Limpar sele\u00e7\u00e3o."],"List View":["Lista"],"Minimum height":["Altura m\u00ednima"],"Show":["Mostrar"],"Hide":["Esconder"],"Original":["Original"],"Blocks":["Blocos"],"No blocks found.":["Nenhum bloco encontrado."],"%d result found, use up and down arrow keys to navigate.":["%d resultado encontrado, use as setas para cima e para baixo para navegar.","%d resultados encontrados, use as setas para cima e para baixo para navegar"],"No results.":["Nenhum resultado."],"Reset":["Redefinir"],"Category":["Categoria"],"Change text alignment":["Mudar alinhamento do texto"],"Change alignment":["Mudar alinhamento"],"Current":["Atual"],"Convert to HTML":["Converter para HTML"],"After Conversion":["Depois da convers\u00e3o"],"No block selected.":["Nenhum bloco selecionado."],"This block has encountered an error and cannot be previewed.":["Este bloco encontrou um erro e n\u00e3o pode ser visualizado."],"Convert to Classic Block":["Converter para o bloco cl\u00e1ssico"],"Resolve Block":["Resolver bloco"],"Convert to Blocks":["Converter para blocos"],"imperative verb\u0004Resolve":["Resolver"],"Block contains unexpected or invalid content.":["Este bloco cont\u00e9m conte\u00fado inesperado ou inv\u00e1lido."],"Block: %s":["Bloco: %s"],"Block %s is the only block, and cannot be moved":["O bloco %s \u00e9 o \u00fanico bloco e n\u00e3o pode ser movido"],"Move %1$s block from position %2$d down to position %3$d":["Mover %1$s bloco da posi\u00e7\u00e3o %2$d para baixo na posi\u00e7\u00e3o %3$d"],"Block %1$s is at the end of the content and can\u2019t be moved right":["O bloco %1$s est\u00e1 no final do conte\u00fado e n\u00e3o pode ser movido para direita"],"Move %1$s block from position %2$d up to position %3$d":["Mover bloco %1$s da posi\u00e7\u00e3o %2$d para a posi\u00e7\u00e3o %3$d"],"Block %1$s is at the beginning of the content and can\u2019t be moved right":["O bloco %1$s est\u00e1 no come\u00e7o do conte\u00fado e n\u00e3o pode ser movido para a direita"],"Blocks cannot be moved up as they are already at the top":["Os blocos n\u00e3o podem ser movidos para cima pois eles j\u00e1 est\u00e3o na parte superior"],"Blocks cannot be moved down as they are already at the bottom":["Os blocos n\u00e3o podem ser movidos para baixo pois eles j\u00e1 est\u00e3o na parte inferior"],"Move %1$d blocks from position %2$d up by one place":["Mover %1$d blocos da posi\u00e7\u00e3o %2$d uma posi\u00e7\u00e3o para cima"],"Move %1$d blocks from position %2$d right by one place":["Mover %1$d blocos da posi\u00e7\u00e3o %2$d para a direita uma posi\u00e7\u00e3o"],"Edit as HTML":["Editar como HTML"],"Edit visually":["Editar visualmente"],"More options":["Mais op\u00e7\u00f5es"],"Duplicate":["Duplicar"],"Change type of %d block":["Mudar tipo de %d bloco","Mudar tipo de %d blocos"],"Transform to":["Transformar em"],"This color combination may be hard for people to read. Try using a darker background color and\/or a brighter %s.":["Essa combina\u00e7\u00e3o de cores pode ser dif\u00edcil para as pessoas lerem. Tente usar uma cor de fundo mais escura e\/ou uma %s mais clara. "],"This color combination may be hard for people to read. Try using a brighter background color and\/or a darker %s.":["Essa combina\u00e7\u00e3o de cores pode ser dif\u00edcil para as pessoas lerem. Tente usar uma cor de fundo mais clara e\/ou uma %s mais escura. "],"Attempt recovery":["Tentar restaurar"],"Add %s":["Adicionar %s"],"%d result found.":["%d resultado encontrado.","%d resultados encontrados."],"Search for a block":["Procurar um bloco"],"Available block types":["Tipos de bloco dispon\u00edveis"],"blocks\u0004Most used":["Mais usados"],"Paste or type URL":["Colar ou digitar URL"],"no title":["sem t\u00edtulo"],"Copy link":["Copiar link"],"Tag":["Tag"],"Skip to the selected block":["Pule para o bloco selecionado"],"Link settings":["Configura\u00e7\u00f5es do link"],"HTML anchor":["\u00c2ncora de HTML"],"Additional CSS class(es)":["Classes CSS adicionais"],"%s: Sorry, this file type is not supported here.":["%s: n\u00e3o h\u00e1 suporte para este tipo de arquivo aqui."],"%s: This file is empty.":["%s: este arquivo est\u00e1 vazio."],"Options":["Op\u00e7\u00f5es"],"Navigate to the nearest toolbar.":["Navegar para a barra de ferramentas mais pr\u00f3xima."],"Select all text when typing. Press again to select all blocks.":["Selecionar todo o texto durante a digita\u00e7\u00e3o. Pressionar novamente para selecionar todos blocos."],"Duplicate the selected block(s).":["Duplicar o(s) bloco(s) selecionado(s)."],"Remove the selected block(s).":["Remover o(s) bloco(s) selecionado(s)."],"Insert a new block before the selected block(s).":["Inserir um novo bloco antes do(s) bloco(s) selecionado(s)."],"Insert a new block after the selected block(s).":["Inserir um novo bloco ap\u00f3s o(s) bloco(s) selecionado(s)."],"%d block":["%d bloco","%d blocos"],"Document":["Documento"],"Find original":["Encontre o original"],"This block can only be used once.":["Este bloco s\u00f3 pode ser usado uma vez."],"Button":["Bot\u00e3o"],"Fixed background":["Fundo fixo"],"Edit URL":["Editar URL"],"Text alignment":["Alinhamento do texto"],"Heading %d":["T\u00edtulo %d"],"Heading":["T\u00edtulo"],"Align text left":["Alinhar texto \u00e0 esquerda"],"Align text center":["Alinhar texto ao centro"],"Align text right":["Alinhar texto \u00e0 direita"],"Block tools":["Ferramentas do bloco"],"To edit this block, you need permission to upload media.":["Para editar este bloco, voc\u00ea precisa de permiss\u00e3o para enviar m\u00eddia."],"block style\u0004Default":["Padr\u00e3o"],"Change block type or style":["Alterar tipo ou estilo do bloco"],"verb\u0004Group":["Agrupar"],"Ungrouping blocks from within a grouping block back into individual blocks within the Editor\u0004Ungroup":["Desagrupar"],"While writing, you can press <kbd>\/<\/kbd> to quickly insert new blocks.":["Ao escrever, pressione <kbd>\/<\/kbd> para inserir novos blocos rapidamente."],"Add a block":["Adicionar um bloco"],"This color combination may be hard for people to read.":["Esta combina\u00e7\u00e3o de cores pode dificultar a leitura."],"Skip":["Pular"],"Enter a word or two \u2014 without spaces \u2014 to make a unique web address just for this block, called an \u201canchor\u201d. Then, you\u2019ll be able to link directly to this section of your page.":["Digite uma ou duas palavras, sem espa\u00e7os, para criar um endere\u00e7o \u00fanico para este bloco, chamado \"\u00e2ncora\". Ent\u00e3o, voc\u00ea poder\u00e1 apontar diretamente para esta se\u00e7\u00e3o da sua p\u00e1gina."],"Learn more about anchors":["Saiba mais sobre \u00e2ncoras"],"Separate multiple classes with spaces.":["Separe v\u00e1rias classes com espa\u00e7os."],"Group":["Grupo"],"Open in new tab":["Abrir em uma nova aba"],"Border radius":["Bordas arredondadas"],"Move left":["Mover para a esquerda"],"Move right":["Mover para a direita"],"Gradient":["Gradiente"],"Block breadcrumb":["Breadcrumb do bloco"],"Multiple selected blocks":["M\u00faltiplos blocos selecionados"],"%s block added":["Bloco %s adicionado"],"directly add the only allowed block\u0004Add %s":["Adicionar %s"],"Generic label for block inserter button\u0004Add block":["Adicionar bloco"],"Choose variation":["Escolher varia\u00e7\u00e3o"],"Select a variation to start with:":["Selecione uma varia\u00e7\u00e3o para iniciar:"],"Currently selected link settings":["Configura\u00e7\u00f5es do link selecionado no momento"],"Press ENTER to add this link":["Pressione ENTER para adicionar este link"],"Search or type URL":["Pesquisar ou digitar o URL"],"The media file has been replaced":["O arquivo de m\u00eddia foi substitu\u00eddo"],"Open Media Library":["Abrir biblioteca de m\u00eddias"],"Text labelling a interface as controlling a given layout property (eg: margin) for a given screen size.\u0004Controls the %1$s property for %2$s viewports.":["Controla a propriedade %1$s para as viewports %2$s."],"Small screens":["Telas pequenas"],"Medium screens":["Telas m\u00e9dias"],"Large screens":["Telas grandes"],"Use the same %s on all screen sizes.":["Usar o mesmo %s em todos os tamanhos de tela."],"Move %1$s block from position %2$d left to position %3$d":["Mover bloco %1$s da posi\u00e7\u00e3o esquerda %2$d para a posi\u00e7\u00e3o %3$d"],"Move %1$s block from position %2$d right to position %3$d":["Mover bloco %1$s da posi\u00e7\u00e3o direita %2$d para a posi\u00e7\u00e3o %3$d"],"Block %1$s is at the end of the content and can\u2019t be moved down":["O bloco %1$s est\u00e1 no final do conte\u00fado e n\u00e3o pode ser movido para baixo"],"Block %1$s is at the end of the content and can\u2019t be moved left":["O bloco %1$s est\u00e1 no final do conte\u00fado e n\u00e3o pode ser movido para \u00e0 esquerda"],"Block %1$s is at the beginning of the content and can\u2019t be moved up":["O bloco %1$s est\u00e1 no come\u00e7o do conte\u00fado e n\u00e3o pode ser movido para cima"],"Block %1$s is at the beginning of the content and can\u2019t be moved left":["O bloco %1$s est\u00e1 no come\u00e7o do conte\u00fado e n\u00e3o pode ser movido para \u00e0 esquerda."],"Line height":["Altura da linha"],"Typography":["Tipografia"],"Padding":["Recuo"],"Spacing":["Espa\u00e7amento"],"Change matrix alignment":["Alterar o alinhamento da matriz"],"Open Colors Selector":["Abrir o seletor de cores"],"Indent a list by pressing <kbd>space<\/kbd> at the beginning of a line.":["Recue uma lista pressionando <kbd>espa\u00e7o<\/kbd> no in\u00edcio de uma linha."],"Outdent a list by pressing <kbd>backspace<\/kbd> at the beginning of a line.":["Desfa\u00e7a o recuo de uma lista pressionando <kbd>backspace<\/kbd> no in\u00edcio da linha."],"Drag files into the editor to automatically insert media blocks.":["Arraste arquivos para o editor para inserir automaticamente no bloco de m\u00eddia."],"Change a block's type by pressing the block icon on the toolbar.":["Altere um tipo de bloco pressionando o \u00edcone do bloco na barra de ferramentas."],"%d block added.":["%d bloco adicionado.","%d blocos adicionados."],"Patterns":["Padr\u00f5es"],"A tip for using the block editor":["Uma dica para usar o editor de blocos"],"Browse all. This will open the main inserter panel in the editor toolbar.":["Navegar por todos. Isso abrir\u00e1 o painel principal do insersor na barra de ferramentas do editor."],"Browse all":["Navegar por todos"],"Copied \"%s\" to clipboard.":["Copiado \"%s\" para \u00e0 \u00e1rea de transfer\u00eancia."],"Moved \"%s\" to clipboard.":["Movido \"%s\" para \u00e0 \u00e1rea de transfer\u00eancia."],"Copied %d block to clipboard.":["Copiado %d bloco para \u00e0 \u00e1rea de transfer\u00eancia.","Copiados %d blocos para \u00e0 \u00e1rea de transfer\u00eancia."],"Moved %d block to clipboard.":["Movido %d bloco para \u00e0 \u00e1rea de transfer\u00eancia.","Movidos %d blocos para \u00e0 \u00e1rea de transfer\u00eancia."],"Block %1$d of %2$d, Level %3$d.":["Bloco %1$d de %2$d, n\u00edvel %3$d."],"Block navigation structure":["Estrutura de navega\u00e7\u00e3o de blocos"],"Block variations":["Varia\u00e7\u00f5es do bloco"],"Image size presets":["Predefini\u00e7\u00f5es de tamanho de imagem"],"An unknown error occurred during creation. Please try again.":["Ocorreu um erro desconhecido durante a cria\u00e7\u00e3o. Tente novamente."],"Creating":["Criando"],"Current media URL:":["URL atual da m\u00eddia:"],"Move the selected block(s) up.":["Mover os blocos selecionados para cima."],"Move the selected block(s) down.":["Mover os blocos selecionados para baixo."],"Aspect Ratio":["Propor\u00e7\u00e3o"],"Landscape":["Paisagem"],"Portrait":["Retrato"],"Could not edit image. %s":["N\u00e3o foi poss\u00edvel alterar a imagem. %s"],"Zoom":["Zoom"],"Rotate":["Girar"],"Filter patterns":["Padr\u00f5es de filtro"],"Block pattern \"%s\" inserted.":["Padr\u00e3o de bloco \"%s\" inserido."],"Create: <mark>%s<\/mark>":["Criar: <mark>%s<\/mark>"],"Appearance":["Apar\u00eancia"],"Captions":["Legendas"],"Add an anchor":["Adicionar uma \u00e2ncora"],"Decoration":["Decora\u00e7\u00e3o"],"Uppercase":["Mai\u00fasculas"],"Lowercase":["Min\u00fasculas"],"Capitalize":["Usar mai\u00fasculas"],"Letter case":["Letra mai\u00fascula\/min\u00fascula"],"Font weight":["Espessura da fonte"],"Font style":["Estilo da fonte"],"Block patterns":["Padr\u00f5es de blocos"],"Drag":["Arrastar"],"More":["Mais"],"Transform to variation":["Transformar varia\u00e7\u00e3o"],"Editor canvas":["Editar canvas"],"Margin":["Margem"],"Duotone":["Duotone"],"Apply duotone filter":["Aplicar filtro duotone"],"Layout":["Apresenta\u00e7\u00e3o"],"Use left and right arrow keys to move through blocks":["Use as teclas de seta esquerda e direita para navegar pelos blocos"],"Type \/ to choose a block":["Digite \/ para escolher um bloco"],"Choose":["Escolher"],"Previous pattern":["Padr\u00e3o anterior"],"Next pattern":["Pr\u00f3ximo padr\u00e3o"],"Carousel view":["Visualiza\u00e7\u00e3o de carrossel"],"No preview available.":["Nenhuma pr\u00e9-visualiza\u00e7\u00e3o dispon\u00edvel."],"HTML element":["Elemento HTML"],"Default (<div>)":["Padr\u00e3o (<div>)"],"Displays more block tools":["Mostra mais ferramentas do bloco"],"Create a two-tone color effect without losing your original image.":["Crie um efeito de cor de dois tons sem perder a imagem original."],"No selected font appearance":["Apar\u00eancia da fonte n\u00e3o selecionada"],"Currently selected font weight: %s":["Peso da fonte selecionado no momento: %s"],"Currently selected font style: %s":["Estilo da fonte selecionado no momento: %s"],"Currently selected font appearance: %s":["Apar\u00eancia da fonte selecionada no momento: %s"],"Top left":["Em cima \u00e0 esquerda"],"Top right":["Em cima \u00e0 direita"],"Bottom left":["Em baixo \u00e0 esquerda"],"Bottom right":["Em baixo \u00e0 direita"],"Unlink radii":["Desvincular arredondamentos de borda"],"Link radii":["Vincular arredondamentos de borda"],"Radius":["Raio"],"Letter spacing":["Espa\u00e7amento entre letras"],"Block spacing":["Espa\u00e7amento do bloco"],"Explore all patterns":["Explorar todos os padr\u00f5es"],"The <header> element should represent introductory content, typically a group of introductory or navigational aids.":["O elemento <header> deve representar conte\u00fado introdut\u00f3rio, e normalmente um grupo introdut\u00f3rio ou aux\u00edlio de navega\u00e7\u00e3o."],"The <section> element should represent a standalone portion of the document that can't be better represented by another element.":["O elemento <section> deve representar uma parte aut\u00f4noma do documento que n\u00e3o pode ser melhor representada por outro elemento."],"The <article> element should represent a self-contained, syndicatable portion of the document.":["O elemento <article> deve representar uma parte independente e compartilh\u00e1vel do documento."],"The <aside> element should represent a portion of a document whose content is only indirectly related to the document's main content.":["O elemento <aside> deve representar uma parte do documento na qual o conte\u00fado \u00e9 somente indiretamente relacionado \u00e0 parte principal do documento."],"The <footer> element should represent a footer for its nearest sectioning element (e.g.: <section>, <article>, <main> etc.).":["O elemento <footer> deve representar um rodap\u00e9 do seu elemento de se\u00e7\u00e3o mais pr\u00f3ximo (exemplo: <section>, <article>, <main>, etc)."],"Elements":["Elementos"],"link color":["cor do link"],"Rename":["Renomear"],"Use size preset":["Use tamanho preestabelecido"],"Set custom size":["Definir tamanho personalizado"],"Add default block":["Adicionar bloco padr\u00e3o"],"Lock %s":["Bloquear %s"],"Lock all":["Bloquear tudo"],"Unlock":["Desbloquear"],"Lock":["Bloquear"],"Select parent block (%s)":["Selecione o bloco ascendente (%s)"],"Transparent text may be hard for people to read.":["O texto transparente pode ser dif\u00edcil para as pessoas lerem."],"%s deselected.":["%s desselecionado."],"%s blocks deselected.":["%s blocos n\u00e3o selecionados."],"Transform to %s":["Transformar em %s"],"Date format":["Formato de data"],"Default format":["Formato padr\u00e3o"],"short date format\u0004n\/j\/Y":["j\/n\/Y"],"short date format with time\u0004n\/j\/Y g:i A":["n\/j\/Y g:i A"],"medium date format\u0004M j, Y":["M j, Y"],"medium date format with time\u0004M j, Y g:i A":["M j, Y g:i A"],"long date format\u0004F j, Y":["j \\d\\e F \\d\\e Y"],"Enter your own date format":["Digite seu pr\u00f3prio formato de data"],"Choose a format":["Escolha um formato"],"Custom format":["Formato personalizado"],"Enter a date or time <Link>format string<\/Link>.":["Digite uma <Link>string de formato<\/Link> de data ou hora."],"Link is empty":["O link est\u00e1 vazio"],"Delete selection.":["Excluir sele\u00e7\u00e3o."],"Use featured image":["Usar imagem destacada"],"Select the size of the source image.":["Selecione o tamanho da imagem de origem."],"Unlink sides":["Desconectar lados"],"Link sides":["Conectar lados"],"Close Block Inserter":["Fechar painel de inser\u00e7\u00e3o de blocos"],"Custom (%s)":["Personalizado (%s)"],"All blocks are selected, and cannot be moved":["Todos os blocos est\u00e3o selecionados e n\u00e3o podem ser movidos"],"Blocks cannot be moved left as they are already are at the leftmost position":["Os blocos n\u00e3o podem ser movidos para esquerda, pois j\u00e1 est\u00e3o na posi\u00e7\u00e3o mais \u00e0 esquerda"],"Blocks cannot be moved right as they are already are at the rightmost position":["Os blocos n\u00e3o podem ser movidos nesta dire\u00e7\u00e3o pois j\u00e1 est\u00e3o na posi\u00e7\u00e3o mais \u00e0 direita"],"Apply to all blocks inside":["Aplicar a todos os blocos internos"],"Font":["Fonte"],"Inner blocks use content width":["Os blocos internos usam a largura do conte\u00fado"],"Nested blocks use content width with options for full and wide widths.":["Os blocos aninhados usam a largura do conte\u00fado com op\u00e7\u00f5es para larguras completas e amplas."],"short date format without the year\u0004M j":["j \\d\\e M"],"Now":["Agora"],"Unset":["N\u00e3o definido"],"Set the width of the main content area.":["Definir a largura da \u00e1rea de conte\u00fado principal."],"H1":["H1"],"H2":["H2"],"H3":["H3"],"H4":["H4"],"H5":["H5"],"H6":["H6"],"Hover":["Passar o mouse"],"%s: Sorry, you are not allowed to upload this file type.":["%s: Sem permiss\u00e3o para enviar esse tipo de arquivo."],"Move %1$d blocks from position %2$d down by one place":["Mover %1$d blocos da posi\u00e7\u00e3o %2$d para baixo uma posi\u00e7\u00e3o"],"Move %1$d blocks from position %2$d left by one place":["Mover %1$d blocos da posi\u00e7\u00e3o %2$d para esquerda uma posi\u00e7\u00e3o"],"Stretch to fill available space.":["Esticar para ocupar todo o espa\u00e7o dispon\u00edvel."],"Specify a fixed width.":["Definir uma largura fixa."],"Specify a fixed height.":["Definir uma altura fixa."],"Fit contents.":["Ajustar conte\u00fado."],"Fixed":["Fixo"],"Go to parent Navigation block":["Ir para o bloco de navega\u00e7\u00e3o ascendente"],"Pattern":["Padr\u00e3o"],"Report %s":["Denunciar %s"],"Insert external image":["Inserir imagem externa"],"This image cannot be uploaded to your Media Library, but it can still be inserted as an external image.":["Essa imagem n\u00e3o pode ser enviada para sua biblioteca de m\u00eddia, mas pode ser inserida como uma imagem externa."],"External images can be removed by the external provider without warning and could even have legal compliance issues related to privacy legislation.":["Imagens externas pode ser removidas pelo fornecedor externo sem aviso pr\u00e9vio e tamb\u00e9m podem ter problemas de conformidade legal relacionados \u00e0 legisla\u00e7\u00e3o de privacidade."],"Image uploaded and inserted.":["Imagem enviada e inserida."],"Image inserted.":["Imagem inserida."],"Media List":["Lista de m\u00eddia"],"Unable to paste styles. This feature is only available on secure (https) sites in supporting browsers.":["N\u00e3o foi poss\u00edvel colar estilos. Esse recurso est\u00e1 dispon\u00edvel apenas em sites seguros (https) em navegadores espec\u00edficos."],"Unable to paste styles. Please allow browser clipboard permissions before continuing.":["N\u00e3o foi poss\u00edvel colar estilos. Permita que o navegador acesse os itens copiados antes de continuar."],"Unable to paste styles. Block styles couldn't be found within the copied content.":["N\u00e3o foi poss\u00edvel colar estilos. Estilos de blocos n\u00e3o foram encontrados no conte\u00fado copiado."],"Pasted styles to %s.":["Estilos colados para %s."],"Pasted styles to %d blocks.":["Estilos colados para %d blocos."],"Copy styles":["Copiar estilos"],"Paste styles":["Colar estilos"],"Sticky":["Fixo"],"The block will stick to the top of the window instead of scrolling.":["O bloco ficar\u00e1 fixo no topo da janela ao inv\u00e9s de rolar com a p\u00e1gina."],"The block will not move when the page is scrolled.":["O bloco n\u00e3o mover\u00e1 ao rolar a p\u00e1gina."],"Position":["Posi\u00e7\u00e3o"],"Currently selected position: %s":["Posi\u00e7\u00e3o selecionada no momento: %s"],"Format tools":["Ferramentas de formata\u00e7\u00e3o"],"%s block inserted":["bloco %s inserido"],"Append to %1$s block at position %2$d, Level %3$d":["Adicionar ao bloco %1$s na posi\u00e7\u00e3o %2$d, n\u00edvel %3$d"],"Shadow":["Sombra"],"There is an error with your CSS structure.":["H\u00e1 um erro com a estrutura do seu CSS."],"Name for the value of the CSS position property\u0004Sticky":["Fixo"],"Name for the value of the CSS position property\u0004Fixed":["Fixo"],"https:\/\/wordpress.org\/documentation\/article\/page-jumps\/":["https:\/\/wordpress.org\/documentation\/article\/page-jumps\/"],"Add before":["Adicionar antes"],"Add after":["Adicionar depois"],"The block will stick to the scrollable area of the parent %s block.":["O bloco ficar\u00e1 preso \u00e0 \u00e1rea rol\u00e1vel do bloco ascendente %s."],"Name for applying graphical effects\u0004Filters":["Filtros"],"Position: %s":["Posi\u00e7\u00e3o: %s"],"Change level":["Mudar n\u00edvel"],"Example:":["Exemplo:"],"https:\/\/wordpress.org\/documentation\/article\/customize-date-and-time-format\/":["https:\/\/wordpress.org\/documentation\/article\/customize-date-and-time-format\/"],"Resolution":["Resolu\u00e7\u00e3o"],"Additional link settings\u0004Advanced":["Avan\u00e7ado"],"Suggestions":["Sugest\u00f5es"],"%d Block":["%d bloco","%d blocos"],"Aspect ratio option for dimensions control\u0004Original":["Original"],"Aspect ratio option for dimensions control\u0004Custom":["Personalizado"],"Aspect ratio":["Propor\u00e7\u00e3o"],"Scale option for dimensions control\u0004Fill":["Preencher"],"Fill the space by stretching the content.":["Preencha o espa\u00e7o esticando o conte\u00fado."],"Scale option for dimensions control\u0004Contain":["Conter"],"Fit the content to the space without clipping.":["Ajuste o conte\u00fado ao espa\u00e7o sem cortar."],"Scale option for dimensions control\u0004Cover":["Preenchimento completo"],"Fill the space by clipping what doesn't fit.":["Preencha o espa\u00e7o recortando o que n\u00e3o se encaixa."],"Scale option for dimensions control\u0004None":["Nenhum"],"Do not adjust the sizing of the content. Content that is too large will be clipped, and content that is too small will have additional padding.":["N\u00e3o ajuste o tamanho do conte\u00fado. O conte\u00fado muito grande ser\u00e1 cortado e o conte\u00fado muito pequeno ter\u00e1 preenchimento adicional."],"Scale option for dimensions control\u0004Scale down":["Reduzir a escala"],"Scale down the content to fit the space if it is too big. Content that is too small will have additional padding.":["Redimensione o conte\u00fado para caber no espa\u00e7o se estiver muito grande. O conte\u00fado que estiver muito pequeno ter\u00e1 preenchimento adicional."],"Image size option for resolution control\u0004Thumbnail":["Miniatura"],"Image size option for resolution control\u0004Medium":["M\u00e9dio"],"Image size option for resolution control\u0004Large":["Grande"],"Image size option for resolution control\u0004Full Size":["Tamanho completo"],"Image covers the space evenly.":["A imagem est\u00e1 cobrindo o espa\u00e7o uniformemente."],"Image is contained without distortion.":["A imagem \u00e9 contida sem distor\u00e7\u00e3o."],"Page":["P\u00e1gina"],"First page":["Primeira p\u00e1gina"],"paging\u0004%1$s of %2$s":["%1$s de %2$s"],"Last page":["\u00daltima p\u00e1gina"],"Select text across multiple blocks.":["Selecione texto por v\u00e1rios blocos."],"%d pattern found":["%d padr\u00e3o encontrado","%d padr\u00f5es encontrados"],"Pattern Directory":["Diret\u00f3rio de padr\u00f5es"],"Theme & Plugins":["Temas e plugins"],"Patterns are available from the <Link>WordPress.org Pattern Directory<\/Link>, bundled in the active theme, or created by users on this site. Only patterns created on this site can be synced.":["Os padr\u00f5es est\u00e3o dispon\u00edveis no <Link>Diret\u00f3rio de padr\u00f5es do WordPress.org<\/Link>, inclu\u00eddos no tema ativo ou criados por usu\u00e1rios neste site. Apenas padr\u00f5es criados neste site podem ser sincronizados."],"https:\/\/wordpress.org\/patterns\/":["https:\/\/br.wordpress.org\/patterns\/"],"%d category button displayed.":["%d bot\u00e3o de categoria exibido.","%d bot\u00f5es de categoria exibidos."],"No results found":["Nenhum resultado foi encontrado"],"Only images can be used as a background image.":["Apenas imagens podem ser usadas como imagem de fundo"],"Background image":["Imagem de fundo"],"Drop to upload":["Solte para enviar"],"Block name reset to: \"%s\".":["Nome do bloco redefinido para: \"%s\"."],"Block name changed to: \"%s\".":["Nome do bloco modificado para: \"%s\"."],"Ungroup":["Desagrupar"],"Image settings\u0004Settings":["Configura\u00e7\u00f5es"],"The <main> element should be used for the primary content of your document only.":["O elemento <main> deve ser usado apenas para o conte\u00fado principal do seu documento."],"Link copied to clipboard.":["Link copiado para a \u00e1rea de transfer\u00eancia."],"Repeat":["Repetir"],"Drop shadow":["Sombra projetada"],"Drop shadows":["Sombra projetada"],"Border & Shadow":["Borda e sombra"],"Manage the inclusion of blocks added automatically by plugins.":["Gerenciar a inclus\u00e3o de blocos adicionados automaticamente por plugins."],"patterns\u0004Synced":["Sincronizado"],"patterns\u0004Not synced":["N\u00e3o sincronizado"],"Select parent block: %s":["Selecionar bloco ascendente: %s"],"No transforms.":["Sem transforma\u00e7\u00f5es."],"Multiple blocks selected":["V\u00e1rios blocos selecionados"],"Locked":["Bloqueado"],"screen sizes\u0004All":["Todas"],"Link to image file":["Apontar para o arquivo da image"],"Link to attachment page":["Link para p\u00e1gina de anexo"],"Link CSS class":["Classe CSS do link"],"Scale the image with a lightbox effect.":["Dimensione a imagem com efeito de lightbox."],"Scales the image with a lightbox effect":["Dimensiona a imagem com efeito de lightbox"],"Disable enlarge on click":["Desativar amplia\u00e7\u00e3o ao clicar"],"%s block.":["Bloco %s.","Blocos %s."],"%s element.":["Elemento %s.","Elementos %s."],"%s settings.":["Configura\u00e7\u00f5es %s."],"%s styles.":["%s estilos."],"%s.":["%s."],"Be careful!":["Cuidado!"],"Focal point":["Ponto focal"],"Image has a fixed width.":["A imagem tem largura fixa."],"Add background image":["Adicionar imagem de fundo"],"Background image: %s":["Imagem de fundo: %s"],"No background image selected":["Nenhuma imagem de fundo selecionada"],"Size option for background image control\u0004Cover":["Cover"],"Size option for background image control\u0004Contain":["Contain"],"Size option for background image control\u0004Tile":["Repetir"],"Background image width":["Largura da imagem de fundo"],"Grid span":["Extens\u00e3o da grade"],"Column span":["Extens\u00e3o da coluna"],"Row span":["Extens\u00e3o da linha"],"Grid placement":["Posicionamento da grade"],"This block allows overrides. Changing the name can cause problems with content entered into instances of this pattern.":["Este bloco permite substitui\u00e7\u00f5es. Alterar o nome pode causar problemas com o conte\u00fado inserido em inst\u00e2ncias deste padr\u00e3o."],"Collapse all other items.":["Recolher todos os outros itens."],"Create a group block from the selected multiple blocks.":["Crie um bloco de grupo a partir dos m\u00faltiplos blocos selecionados."],"block toolbar button label and description\u0004This block is connected.":["Este bloco est\u00e1 conectado."],"block toolbar button label and description\u0004These blocks are connected.":["Esses blocos est\u00e3o conectados."],"Generic label for pattern inserter button\u0004Add pattern":["Adicionar padr\u00e3o"],"Selected blocks are grouped.":["Os blocos selecionados est\u00e3o agrupados."],"This block is locked.":["Este bloco est\u00e1 bloqueado."],"Background size, position and repeat options.":["Op\u00e7\u00f5es de repeti\u00e7\u00e3o, posi\u00e7\u00e3o e tamanho do plano de fundo."],"Intrinsic block width in flex layout\u0004Fit":["Ajustar"],"Block with expanding width in flex layout\u0004Grow":["Crescer"],"Block with fixed width in flex layout\u0004Fixed":["Fixo"],"Layout type":["Tipo de leiaute"],"Drop pattern.":["Solte o padr\u00e3o."],"Drag and drop patterns into the canvas.":["Arraste e solte padr\u00f5es na tela."],"Attributes connected to custom fields or other dynamic data.":["Atributos conectados a campos personalizados ou outros dados din\u00e2micos."],"Unlock content locked blocks\u0004Modify":["Modificar"],"Empty %s; start writing to edit its value":["%s vazio; comece a escrever para editar seu valor"],"spacing\u0004%1$s %2$s":["%1$s %2$s"],"Manage link":["Gerenciar link"],"Link information":["Informa\u00e7\u00e3o do link"],"verb\u0004Upload":["Enviar"],"Nested blocks will fill the width of this container.":["Blocos aninhados preencher\u00e3o a largura deste cont\u00eainer."],"file name\u0004unnamed":["sem nome"],"Copy the selected block(s).":["Copia o(s) bloco(s) selecionado(s)."],"Cut the selected block(s).":["Recorte o(s) bloco(s) selecionado(s)."],"Paste the selected block(s).":["Cola o(s) bloco(s) selecionado(s)."],"Styles copied to clipboard.":["Estilos copiados para a \u00e1rea de transfer\u00eancia."],"Block \"%s\" can't be inserted.":["N\u00e3o foi poss\u00edvel inserir o bloco \"%s\"."],"Full height":["Altura total"],"Select the features you want to lock":["Selecione os recursos que deseja bloquear"],"Lock editing":["Bloquear edi\u00e7\u00e3o"],"Lock movement":["Bloquear movimento"],"Lock removal":["Bloquear remo\u00e7\u00e3o"],"action: convert blocks to group\u0004Group":["Agrupar"],"action: convert blocks to row\u0004Row":["Linha"],"action: convert blocks to stack\u0004Stack":["Empilhar"],"action: convert blocks to grid\u0004Grid":["Em grade"],"Change design":["Alterar design"],"Shuffle styles":["Embaralhar estilos"],"%d block moved.":["%d bloco movido.","%d blocos movidos."],"Image cropped.":["Imagem recortada."],"Image rotated.":["Imagem rotacionada."],"Image cropped and rotated.":["Imagem recortada e rotacionada."],"%d%%":["%d\u00a0%%"],"Drag and drop an image or video, upload, or choose from your library.":["Arraste e solte, envie ou escolha uma imagem ou um v\u00eddeo de sua biblioteca."],"Drag and drop an audio file, upload, or choose from your library.":["Arraste e solte, envie ou escolha um \u00e1udio de sua biblioteca."],"Drag and drop an image, upload, or choose from your library.":["Arraste e solte, envie ou escolha uma imagem de sua biblioteca."],"Drag and drop a video, upload, or choose from your library.":["Arraste e solte, envie ou escolha um v\u00eddeo de sua biblioteca."],"Choose whether to use the same value for all screen sizes or a unique value for each screen size.":["Escolha se deseja usar o mesmo valor para todos os tamanhos de tela ou um valor espec\u00edfico para cada tamanho."],"Enlarge on click":["Ampliar ao clicar"],"The <div> element should only be used if the block is a design element with no semantic meaning.":["O elemento <div> s\u00f3 deve ser usado se o bloco for um elemento de design sem significado sem\u00e2ntico."],"The <nav> element should be used to identify groups of links that are intended to be used for website or page content navigation.":["O elemento <nav> deve ser usado para identificar grupos de links que se destinam a ser usados para navega\u00e7\u00e3o de conte\u00fado do site ou p\u00e1gina."],"Attachment":["Anexo"],"Blog home":["P\u00e1gina inicial do blog"],"Synced with the selected %s.":["Sincronizado com o(a) %s selecionado(a)."],"Unsync and edit":["Dessincronizar e editar"],"Manage allowed blocks":["Gerenciar blocos permitidos"],"Select which blocks can be added inside this container.":["Selecione quais blocos podem ser adicionados neste cont\u00eainer."],"Specify which blocks are allowed inside this container.":["Especificar quais blocos s\u00e3o permitidos dentro deste cont\u00eainer."],"Allowed Blocks":["Blocos permitidos"],"Use border radius preset":["Utilizar pr\u00e9-defini\u00e7\u00e3o de raio de borda"],"Set custom border radius":["Define um raio de borda personalizado"],"Paste the copied style to the selected block(s).":["Cola o estilo copiado para o(s) bloco(s) selecionado(s)."],"Show or hide the selected block(s).":["Mostrar ou ocultar o(s) bloco(s) selecionado(s)."],"No sources available":["N\u00e2o h\u00e1 origens dispon\u00edveis"],"Not connected":["N\u00e3o conectado"],"Source not registered":["Origem n\u00e3o registrada"],"Blocks hidden. You can access them via the List View (%s).":["Blocos ocultos. Voc\u00ea pode acess\u00e1-los atrav\u00e9s da Visualiza\u00e7\u00e3o em Lista (%s)."],"Block hidden. You can access it via the List View (%s).":["Bloco oculto. Ele pode ser acessado atrav\u00e9s da Visualiza\u00e7\u00e3o em lista (%s)."],"Visible":["Vis\u00edvel"],"Block is hidden.":["O bloco est\u00e1 oculto."],"Link relation":["Rela\u00e7\u00e3o do link"],"The <a>Link Relation<\/a> attribute defines the relationship between a linked resource and the current document.":["O atributo <a>rela\u00e7\u00e3o de link<\/a> define a rela\u00e7\u00e3o entre um recurso vinculado e o documento atual."],"Edit contents":["Editar conte\u00fados"],"The <a> element should be used for links that navigate to a different page or to a different section within the same page.":["O elemento <a> deve ser usado para links que navegam para uma p\u00e1gina diferente ou para uma se\u00e7\u00e3o diferente dentro da mesma p\u00e1gina."],"The <button> element should be used for interactive controls that perform an action on the current page, such as opening a modal or toggling content visibility.":["O elemento <button> deve ser usado para controles interativos que realizam uma a\u00e7\u00e3o na p\u00e1gina atual, tal como abrir um modal ou alternar visibilidade de conte\u00fado."],"%s (Already in use)":["%s (j\u00e1 em uso)"],"Multiple <main> elements detected. The duplicate may be in your content or template. This is not valid HTML and may cause accessibility issues. Please change this HTML element.":["Foram detectados m\u00faltiplos elementos <main>. A duplicata pode estar no seu conte\u00fado ou no seu modelo. Isto n\u00e3o \u00e9 HTML v\u00e1lido e pode causar problemas de acessibilidade. Edite este elemento HTML."],"Text":["Texto"],"Custom":["Personalizado"],"Content width":["Largura do conte\u00fado"],"Mixed":["Misturado"],"Audio":["\u00c1udios"],"Video":["V\u00eddeos"],"Auto":["Auto"],"font size name\u0004Normal":["Normal"],"Wide width":["Largura ampla"],"Full width":["Largura total"],"Pale pink":["Rosa p\u00e1lido"],"Vivid red":["Vermelho v\u00edvido"],"Luminous vivid orange":["Laranja v\u00edvido luminoso"],"Luminous vivid amber":["\u00c2mbar luminoso v\u00edvido"],"Light green cyan":["Verde ciano claro"],"Vivid green cyan":["Verde ciano v\u00edvido"],"Pale cyan blue":["Azul ciano p\u00e1lido"],"Vivid cyan blue":["Azul ciano v\u00edvido"],"Cyan bluish gray":["Cinza ciano azulado"],"font size name\u0004Small":["Pequeno"],"font size name\u0004Medium":["M\u00e9dio"],"font size name\u0004Large":["Grande"],"font size name\u0004Huge":["Enorme"],"%s block selected.":["%s bloco selecionado.","%s blocos selecionados."],"Block vertical alignment setting label\u0004Change vertical alignment":["Mudar alinhamento vertical"],"Vivid purple":["Roxo intenso"],"Vivid cyan blue to vivid purple":["Azul ciano ao roxo intenso"],"Light green cyan to vivid green cyan":["Ciano verde claro a ciano verde v\u00edvido"],"Luminous vivid amber to luminous vivid orange":["\u00c2mbar v\u00edvido luminoso a laranja v\u00edvido luminoso"],"Luminous vivid orange to vivid red":["Laranja v\u00edvido luminoso a vermelho v\u00edvido"],"Very light gray to cyan bluish gray":["Cinza muito claro a cinza azulado"],"Cool to warm spectrum":["Legal para entusiasmar o espectro"],"Blush light purple":["Roxo claro corado"],"Blush bordeaux":["Bordeaux corado"],"Luminous dusk":["Sombra luminosa"],"Pale ocean":["Oceano p\u00e1lido"],"Electric grass":["Grama el\u00e9trica"],"Midnight":["Meia-noite"],"Block vertical alignment setting\u0004Align top":["Alinhar ao topo"],"Block vertical alignment setting\u0004Align middle":["Alinhar no meio"],"Block vertical alignment setting\u0004Align bottom":["Alinha \u00e0 base"],"Change items justification":["Alterar alinhamento dos itens"],"Horizontal":["Horizontal"],"Vertical":["Vertical"],"Customize the width for all elements that are assigned to the center or wide columns.":["Personalize a largura de todos os elementos atribu\u00eddos a colunas centrais ou amplas."],"Justify items left":["Justificar itens \u00e0 esquerda"],"Justify items center":["Justificar itens ao centro"],"Justify items right":["Justificar itens \u00e0 direita"],"Space between items":["Espa\u00e7o entre os itens"],"Indicates this palette comes from the theme.\u0004Theme":["Tema"],"Indicates this palette comes from WordPress.\u0004Default":["Padr\u00e3o"],"Indicates this palette is created by the user.\u0004Custom":["Personalizado"],"Flex":["Flex"],"Justification":["Justificado"],"Allow to wrap to multiple lines":["Permitir quebra de linhas"],"Orientation":["Orienta\u00e7\u00e3o"],"Flow":["Fluxo"],"Max %s wide":["M\u00e1ximo %s de largura"],"font style\u0004Regular":["Normal"],"font style\u0004Italic":["It\u00e1lico"],"font weight\u0004Thin":["Fino"],"font weight\u0004Extra Light":["Extra leve"],"font weight\u0004Light":["Leve"],"font weight\u0004Regular":["Normal"],"font weight\u0004Medium":["M\u00e9dio"],"font weight\u0004Semi Bold":["Semi Negrito"],"font weight\u0004Bold":["Negrito"],"font weight\u0004Extra Bold":["Negrito extra"],"font weight\u0004Black":["Preto"],"You are currently in zoom-out mode.":["Voc\u00ea est\u00e1 atualmente no modo de redu\u00e7\u00e3o de zoom."],"Spacing control":["Controle de espa\u00e7amento"],"Constrained":["Restrito"],"Block vertical alignment setting\u0004Stretch to fill":["Aumentar para preencher"],"Block vertical alignment setting\u0004Space between":["Espa\u00e7o entre"],"Stretch items":["Esticar itens"],"Horizontal & vertical":["Horizontal e vertical"],"Grid":["Grade"],"Minimum column width":["Largura m\u00ednima da coluna"],"My patterns":["Meus padr\u00f5es"],"patterns\u0004All":["Todos"],"Blocks can't be inserted into other blocks with bindings":["Blocos n\u00e3o podem ser inseridos em outros blocos com vincula\u00e7\u00f5es"],"Manual":["Manual"],"font style\u0004Oblique":["Obl\u00edquo"],"font weight\u0004Extra Black":["Extra Black"],"Grid items can be manually placed in any position on the grid.":["Os itens da grade podem ser adicionados manualmente em qualquer posi\u00e7\u00e3o na grade."],"Grid items are placed automatically depending on their order.":["Os itens da grade s\u00e3o posicionados automaticamente em fun\u00e7\u00e3o de sua ordem."],"Grid item position":["Posi\u00e7\u00e3o do item na grade"],"font\u0004%1$s %2$s":["%1$s %2$s"],"Starter content":["Conte\u00fado inicial"],"You are currently in Write mode.":["Voc\u00ea est\u00e1 agora no modo Escrita."],"You are currently in Design mode.":["Voc\u00ea est\u00e1 agora no modo Design."],"None":["Nenhum"],"Content":["Conte\u00fado"],"Theme":["Tema"],"Link selected.":["Link selecionado."],"Size":["Tamanho"],"Align":["Alinhar"],"Next page":["Pr\u00f3xima p\u00e1gina"],"Previous page":["P\u00e1gina anterior"],"Clear":["Limpar"],"Media Library":["Biblioteca de m\u00eddia"],"Insert from URL":["Inserir a partir do URL"],"Replace":["Substituir"],"List view":["Lista"],"Grid view":["Visualiza\u00e7\u00e3o em grade"],"Patterns list":["Lista de padr\u00f5es"],"Alignment option\u0004None":["Nenhum"],"URL":["URL"],"Publish":["Publicar"],"Undo":["Desfazer"],"Apply":["Aplicar"],"Advanced":["Avan\u00e7ado"],"Save":["Salvar"],"Name":["Nome"],"Done":["Conclu\u00eddo"],"Preview":["Visualizar"],"Cancel":["Cancelar"],"Left":["Esquerda"],"Right":["Direita"],"Caption":["Legenda"],"Media":["M\u00eddia"],"Black":["Preto"],"White":["Branco"],"Width":["Largura"],"Height":["Altura"],"Default":["Padr\u00e3o"],"No results found.":["Nenhum resultado encontrado."],", ":[", "],"Row":["Linha"],"Column":["Coluna"],"Paragraph":["Par\u00e1grafo"],"Underline":["Sublinhado"],"Strikethrough":["Riscado"],"Cut":["Cortar"],"Copy":["Copiar"],"Border":["Borda"],"Dimensions":["Dimens\u00f5es"],"Top":["Topo"],"Bottom":["Base"],"Source":["Origem"],"Select all":["Selecionar tudo"],"Insert link":["Inserir link"],"Remove link":["Remover link"],"Image":["Imagem"],"Link":["Link"],"Remove":["Remover"],"Colors":["Cores"],"Columns":["Colunas"],"Move down":["Mover para baixo"],"Move up":["Mover para cima"],"Align right":["Alinhar \u00e0 direita"],"Align center":["Alinhar ao centro"],"Align left":["Alinhar \u00e0 esquerda"],"Rows":["Linhas"],"Back":["Voltar"],"Color":["Cor"],"Paste URL or type to search":["Cole o URL ou digite para pesquisar"],"Additional CSS":["CSS adicional"],"Post":["Post"],"Edit":["Editar"],"Plugins":["Plugins"],"Thumbnail":["Miniatura"],"Medium":["M\u00e9dio"],"Full Size":["Tamanho completo"],"Search":["Pesquisar"],"Uncategorized":["Sem categoria"],"Close":["Fechar"],"Settings":["Configura\u00e7\u00f5es"],"User":["Usu\u00e1rio"],"Large":["Grande"],"%s item":["%s item","%s itens"]}},"comment":{"reference":"wp-includes\/js\/dist\/block-editor.js"}} );
+//# sourceURL=wp-block-editor-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/block-editor.min.js?ver=addf558a422e2ee57920" id="wp-block-editor-js"></script>
+<script id="wp-core-data-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"Base":["Base"],"Post Type":["Tipo de Post"],"Widget areas":["\u00c1reas de widget"],"Menu Item":["Item do menu"],"Widget types":["Tipos de widgets"],"Global Styles":["Estilos globais"],"Custom Styles":["Estilos personalizados"],"Status":["Status"],"Taxonomy":["Taxonomia"],"Comment":["Comentar"],"Media":["M\u00eddia"],"Menu Location":["Localiza\u00e7\u00e3o de menu"],"Plugins":["Plugins"],"(no title)":["(sem t\u00edtulo)"],"Themes":["Temas"],"Widgets":["Widgets"],"User":["Usu\u00e1rio"],"Menu":["Menu"],"Site":["Site"]}},"comment":{"reference":"wp-includes\/js\/dist\/core-data.js"}} );
+//# sourceURL=wp-core-data-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/core-data.min.js?ver=15baadfe6e1374188072" id="wp-core-data-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/router.min.js?ver=2dfc4b954318a03e6a76" id="wp-router-js"></script>
+<script id="wp-core-commands-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-03-29 18:57:17+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"View site":["Ver site"],"Go to: %s":["Ir para: %s"],"Go to: Template parts":["Ir para: Partes de modelos"],"Go to: Styles":["Ir para: Estilos"],"Go to: Navigation":["Ir para: Navega\u00e7\u00e3o"],"Go to: Templates":["Ir para: Modelos"],"Go to: Patterns":["Ir para: Padr\u00f5es"],"Open custom CSS":["Abrir CSS personalizado"],"(no title)":["(sem t\u00edtulo)"]}},"comment":{"reference":"wp-includes\/js\/dist\/core-commands.js"}} );
+//# sourceURL=wp-core-commands-js-translations
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/dist/core-commands.min.js?ver=effe2d88d7f0c50a8ce9" id="wp-core-commands-js"></script>
+<script id="wp-core-commands-js-after">
+wp.coreCommands.initializeCommandPalette( {"is_network_admin":false,"menu_commands":[{"label":"Painel","url":"index.php","name":"index.php"},{"label":"Painel \u003E In\u00edcio","url":"index.php","name":"index.php-index.php"},{"label":"Painel \u003E Atualiza\u00e7\u00f5es","url":"update-core.php","name":"index.php-update-core.php"},{"label":"Site Kit","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=googlesitekit-dashboard","name":"googlesitekit-dashboard"},{"label":"Site Kit \u003E Painel","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=googlesitekit-dashboard","name":"googlesitekit-dashboard-googlesitekit-dashboard"},{"label":"Site Kit \u003E Configura\u00e7\u00f5es","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=googlesitekit-settings","name":"googlesitekit-dashboard-googlesitekit-settings"},{"label":"Posts","url":"edit.php","name":"edit.php"},{"label":"Posts \u003E Todos os posts","url":"edit.php","name":"edit.php-edit.php"},{"label":"Posts \u003E Adicionar post","url":"post-new.php","name":"edit.php-post-new.php"},{"label":"Posts \u003E Categorias","url":"edit-tags.php?taxonomy=category","name":"edit.php-edit-tags.php?taxonomy=category"},{"label":"Posts \u003E Tags","url":"edit-tags.php?taxonomy=post_tag","name":"edit.php-edit-tags.php?taxonomy=post_tag"},{"label":"M\u00eddia","url":"upload.php","name":"upload.php"},{"label":"M\u00eddia \u003E Biblioteca","url":"upload.php","name":"upload.php-upload.php"},{"label":"M\u00eddia \u003E Adicionar arquivo de m\u00eddia","url":"media-new.php","name":"upload.php-media-new.php"},{"label":"P\u00e1ginas","url":"edit.php?post_type=page","name":"edit.php?post_type=page"},{"label":"P\u00e1ginas \u003E Todas as p\u00e1ginas","url":"edit.php?post_type=page","name":"edit.php?post_type=page-edit.php?post_type=page"},{"label":"P\u00e1ginas \u003E Adicionar p\u00e1gina","url":"post-new.php?post_type=page","name":"edit.php?post_type=page-post-new.php?post_type=page"},{"label":"Coment\u00e1rios","url":"edit-comments.php","name":"edit-comments.php"},{"label":"Apar\u00eancia","url":"themes.php","name":"themes.php"},{"label":"Apar\u00eancia \u003E Temas","url":"themes.php","name":"themes.php-themes.php"},{"label":"Apar\u00eancia \u003E Padr\u00f5es","url":"site-editor.php?p=/pattern","name":"themes.php-site-editor.php?p=/pattern"},{"label":"Apar\u00eancia \u003E Personalizar","url":"customize.php?return=%2Fwp-admin%2Fadmin.php%3Fpage%3Dparticipants-database-add_participant","name":"themes.php-customize.php?return=%2Fwp-admin%2Fadmin.php%3Fpage%3Dparticipants-database-add_participant"},{"label":"Apar\u00eancia \u003E Widgets","url":"widgets.php","name":"themes.php-widgets.php"},{"label":"Apar\u00eancia \u003E Menus","url":"nav-menus.php","name":"themes.php-nav-menus.php"},{"label":"Apar\u00eancia \u003E Editor de arquivos de tema","url":"theme-editor.php","name":"themes.php-theme-editor.php"},{"label":"Plugins","url":"plugins.php","name":"plugins.php"},{"label":"Plugins \u003E Plugins instalados","url":"plugins.php","name":"plugins.php-plugins.php"},{"label":"Plugins \u003E Adicionar plugin","url":"plugin-install.php","name":"plugins.php-plugin-install.php"},{"label":"Plugins \u003E Editor de arquivos de plugin","url":"plugin-editor.php","name":"plugins.php-plugin-editor.php"},{"label":"Usu\u00e1rios","url":"users.php","name":"users.php"},{"label":"Usu\u00e1rios \u003E Todos os usu\u00e1rios","url":"users.php","name":"users.php-users.php"},{"label":"Usu\u00e1rios \u003E Adicionar usu\u00e1rio","url":"user-new.php","name":"users.php-user-new.php"},{"label":"Usu\u00e1rios \u003E Perfil","url":"profile.php","name":"users.php-profile.php"},{"label":"Ferramentas","url":"tools.php","name":"tools.php"},{"label":"Ferramentas \u003E Ferramentas dispon\u00edveis","url":"tools.php","name":"tools.php-tools.php"},{"label":"Ferramentas \u003E Importar","url":"import.php","name":"tools.php-import.php"},{"label":"Ferramentas \u003E Exportar","url":"export.php","name":"tools.php-export.php"},{"label":"Ferramentas \u003E Diagn\u00f3stico","url":"site-health.php","name":"tools.php-site-health.php"},{"label":"Ferramentas \u003E Exportar dados pessoais","url":"export-personal-data.php","name":"tools.php-export-personal-data.php"},{"label":"Ferramentas \u003E Apagar dados pessoais","url":"erase-personal-data.php","name":"tools.php-erase-personal-data.php"},{"label":"Configura\u00e7\u00f5es","url":"options-general.php","name":"options-general.php"},{"label":"Configura\u00e7\u00f5es \u003E Geral","url":"options-general.php","name":"options-general.php-options-general.php"},{"label":"Configura\u00e7\u00f5es \u003E Escrita","url":"options-writing.php","name":"options-general.php-options-writing.php"},{"label":"Configura\u00e7\u00f5es \u003E Leitura","url":"options-reading.php","name":"options-general.php-options-reading.php"},{"label":"Configura\u00e7\u00f5es \u003E Discuss\u00e3o","url":"options-discussion.php","name":"options-general.php-options-discussion.php"},{"label":"Configura\u00e7\u00f5es \u003E M\u00eddia","url":"options-media.php","name":"options-general.php-options-media.php"},{"label":"Configura\u00e7\u00f5es \u003E Links permanentes","url":"options-permalink.php","name":"options-general.php-options-permalink.php"},{"label":"Configura\u00e7\u00f5es \u003E Privacidade","url":"options-privacy.php","name":"options-general.php-options-privacy.php"},{"label":"Configura\u00e7\u00f5es \u003E CASAS Sitemaps","url":"https://casas.uemmg.org.br/wp-admin/options-general.php?page=casas-sitemaps-pdb","name":"options-general.php-casas-sitemaps-pdb"},{"label":"WP Mail SMTP","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp","name":"wp-mail-smtp"},{"label":"WP Mail SMTP \u003E Configura\u00e7\u00f5es","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp","name":"wp-mail-smtp-wp-mail-smtp"},{"label":"WP Mail SMTP \u003E Registro de e-mail","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp-logs","name":"wp-mail-smtp-wp-mail-smtp-logs"},{"label":"WP Mail SMTP \u003E Relat\u00f3rios de e-mail","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp-reports","name":"wp-mail-smtp-wp-mail-smtp-reports"},{"label":"WP Mail SMTP \u003E Ferramentas","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp-tools","name":"wp-mail-smtp-wp-mail-smtp-tools"},{"label":"WP Mail SMTP \u003E Quem somos","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=wp-mail-smtp-about","name":"wp-mail-smtp-wp-mail-smtp-about"},{"label":"WP Mail SMTP \u003E Atualizar para a vers\u00e3o Pro","url":"https://wpmailsmtp.com/lite-upgrade/?utm_source=WordPress&#038;utm_medium=admin-menu&#038;utm_campaign=liteplugin&#038;utm_locale=pt_br&#038;utm_content=Upgrade%20to%20Pro","name":"wp-mail-smtp-https://wpmailsmtp.com/lite-upgrade/?utm_source=WordPress&#038;utm_medium=admin-menu&#038;utm_campaign=liteplugin&#038;utm_locale=pt_br&#038;utm_content=Upgrade%20to%20Pro"},{"label":"Participants Database","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database","name":"participants-database"},{"label":"Participants Database \u003E Listar participantes","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database","name":"participants-database-participants-database"},{"label":"Participants Database \u003E Adicionar participante","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-add_participant","name":"participants-database-participants-database-add_participant"},{"label":"Participants Database \u003E Gerenciar campos do banco de dados","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-manage_fields","name":"participants-database-participants-database-manage_fields"},{"label":"Participants Database \u003E Gerenciar colunas de lista","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-manage_list_columns","name":"participants-database-participants-database-manage_list_columns"},{"label":"Participants Database \u003E Importar arquivo CSV","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-upload_csv","name":"participants-database-participants-database-upload_csv"},{"label":"Participants Database \u003E Configura\u00e7\u00f5es","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database_settings_page","name":"participants-database-participants-database_settings_page"},{"label":"Participants Database \u003E Guia de Configura\u00e7\u00e3o","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-setup_guide","name":"participants-database-participants-database-setup_guide"},{"label":"Participants Database \u003E Locations Map","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-pdb-locations-map_settings","name":"participants-database-participants-database-pdb-locations-map_settings"},{"label":"Participants Database \u003E Schema Markup","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=pdb-schema-settings","name":"participants-database-pdb-schema-settings"},{"label":"Participants Database \u003E Registro de depura\u00e7\u00e3o","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=participants-database-pdb_debugging","name":"participants-database-participants-database-pdb_debugging"},{"label":"Appointment Panel","url":"https://casas.uemmg.org.br/wp-admin/admin.php?page=appointment-welcome","name":"appointment-welcome"}]} );
+//# sourceURL=wp-core-commands-js-after
+</script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/js/record_edit.js?ver=2.7.8.1-1.1" id="pdb-record_edit_script-js"></script>
+<script id="pdb-record_edit_script-js-after">
+var PDb_L10n={"unsaved_changes":"As mudan\u00e7as que voc\u00ea fez ser\u00e3o perdidas se voc\u00ea navegar para fora desta p\u00e1gina."}
+//# sourceURL=pdb-record_edit_script-js-after
+</script>
+<script id="appointment-plugin-installer-js-js-extra">
+var pluginInstallerAjax = {"ajax_url":"https://casas.uemmg.org.br/wp-admin/admin-ajax.php","hook_suffix":"participants-database_page_participants-database-add_participant","nonce":"7bf769e6c0"};
+//# sourceURL=appointment-plugin-installer-js-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-content/themes/appointment/admin/assets/js/plugin-installer.js" id="appointment-plugin-installer-js-js"></script>
+<script id="dismissible-notices-js-extra">
+var dismissible_notice = {"nonce":"c85a883bd7"};
+//# sourceURL=dismissible-notices-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-content/plugins/participants-database/vendor/collizo4sky/persist-admin-notices-dismissal/dismiss-notice.js?ver=6.9.4" id="dismissible-notices-js"></script>
+<script src="https://casas.uemmg.org.br/wp-admin/js/editor.min.js?ver=6.9.4" id="editor-js"></script>
+<script id="editor-js-after">
+window.wp.oldEditor = window.wp.editor;
+//# sourceURL=editor-js-after
+</script>
+<script id="quicktags-js-extra">
+var quicktagsL10n = {"closeAllOpenTags":"Fechar todas as tags abertas","closeTags":"fechar tags","enterURL":"Digite o URL","enterImageURL":"Digite o URL da imagem","enterImageDescription":"Digite uma descri\u00e7\u00e3o da imagem","textdirection":"dire\u00e7\u00e3o do texto","toggleTextdirection":"Alternar dire\u00e7\u00e3o de texto do editor","dfw":"Modo de escrita sem distra\u00e7\u00f5es","strong":"Negrito","strongClose":"Fechar tag de negrito","em":"It\u00e1lico","emClose":"Fechar tag de it\u00e1lico","link":"Inserir link","blockquote":"Bloco de cita\u00e7\u00e3o","blockquoteClose":"Fechar tag de cita\u00e7\u00e3o","del":"Texto exclu\u00eddo (tachado)","delClose":"Fechar tag de texto exclu\u00edda","ins":"Texto Inserido","insClose":"Fechar tag de texto","image":"Inserir imagem","ul":"Lista com marcadores","ulClose":"Fechar tag de lista com marcadores","ol":"Lista numerada","olClose":"Fechar tag de lista numerada","li":"Item da lista","liClose":"Fechar tag de item de lista","code":"C\u00f3digo","codeClose":"Fechar tag de c\u00f3digo","more":"Inserir a tag \"Leia mais\""};
+//# sourceURL=quicktags-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/quicktags.min.js?ver=6.9.4" id="quicktags-js"></script>
+<script id="wplink-js-extra">
+var wpLinkL10n = {"title":"Inserir/editar link","update":"Atualizar","save":"Adicionar link","noTitle":"(sem t\u00edtulo)","noMatchesFound":"Nenhum resultado encontrado.","linkSelected":"Link selecionado.","linkInserted":"Link inserido.","minInputLength":"3"};
+//# sourceURL=wplink-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/wplink.min.js?ver=6.9.4" id="wplink-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+<script id="thickbox-js-extra">
+var thickboxL10n = {"next":"Pr\u00f3ximo \u00bb","prev":"\u00ab Anterior","image":"Imagem","of":"de","close":"Fechar","noiframes":"Este recurso necessita frames embutidos. Voc\u00ea desativou iframes ou seu navegador n\u00e3o os suporta.","loadingAnimation":"https://casas.uemmg.org.br/wp-includes/js/thickbox/loadingAnimation.gif"};
+//# sourceURL=thickbox-js-extra
+</script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105" id="thickbox-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/shortcode.min.js?ver=6.9.4" id="shortcode-js"></script>
+<script src="https://casas.uemmg.org.br/wp-admin/js/media-upload.min.js?ver=6.9.4" id="media-upload-js"></script>
+		<script type="text/javascript">
+		window.wp = window.wp || {};
+		window.wp.editor = window.wp.editor || {};
+		window.wp.editor.getDefaultSettings = function() {
+			return {
+				tinymce: {theme:"modern",skin:"lightgray",language:"pt",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-49110-20250317",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"pt-BR",wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Insert\/edit link":"metaK","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Add Media":"accessM","Keyboard Shortcuts":"accessH"},content_css:"https://casas.uemmg.org.br/wp-includes/css/dashicons.min.css?ver=6.9.4,https://casas.uemmg.org.br/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=6.9.4",toolbar1:"bold,italic,bullist,numlist,link",wpautop:false,indent:true,elementpath:false,plugins:"charmap,colorpicker,hr,lists,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wptextpattern"},
+				quicktags: {
+					buttons: 'strong,em,link,ul,ol,li,code'
+				}
+			};
+		};
+
+					var tinyMCEPreInit = {
+				baseURL: "https://casas.uemmg.org.br/wp-includes/js/tinymce",
+				suffix: ".min",
+				mceInit: {},
+				qtInit: {},
+				load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+			};
+					</script>
+		<script src="https://casas.uemmg.org.br/wp-includes/js/tinymce/tinymce.min.js?ver=49110-20250317" id="wp-tinymce-root-js"></script>
+<script src="https://casas.uemmg.org.br/wp-includes/js/tinymce/plugins/compat3x/plugin.min.js?ver=49110-20250317" id="wp-tinymce-js"></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'pt', {"New document":"Novo documento","Formats":"Formatos","Headings":"T\u00edtulos","Heading 1":"T\u00edtulo 1","Heading 2":"T\u00edtulo 2","Heading 3":"T\u00edtulo 3","Heading 4":"T\u00edtulo 4","Heading 5":"T\u00edtulo 5","Heading 6":"T\u00edtulo 6","Blocks":"Blocos","Paragraph":"Par\u00e1grafo","Blockquote":"Bloco de cita\u00e7\u00e3o","Preformatted":"Pr\u00e9-formatado","Address":"Endere\u00e7o","Inline":"Embutido","Underline":"Sublinhado","Strikethrough":"Riscado","Subscript":"Subescrito","Superscript":"Superescrito","Clear formatting":"Limpar formata\u00e7\u00e3o","Bold":"Negrito","Italic":"It\u00e1lico","Code":"C\u00f3digo","Source code":"C\u00f3digo-fonte","Font Family":"Fonte","Font Sizes":"Tamanhos da fonte","Align center":"Alinhar ao centro","Align right":"Alinhar \u00e0 direita","Align left":"Alinhar \u00e0 esquerda","Justify":"Justificar","Increase indent":"Aumentar recuo","Decrease indent":"Diminuir recuo","Cut":"Cortar","Copy":"Copiar","Paste":"Colar","Select all":"Selecionar tudo","Undo":"Desfazer","Redo":"Refazer","Ok":"OK","Cancel":"Cancelar","Close":"Fechar","Visual aids":"Recursos visuais","Bullet list":"Lista com marcadores","Numbered list":"Lista numerada","Square":"Quadrado","Default":"Padr\u00e3o","Circle":"C\u00edrculo","Disc":"Disco","Lower Greek":"Grego min\u00fascula","Lower Alpha":"Alfab\u00e9tica min\u00fascula","Upper Alpha":"Alfab\u00e9tica mai\u00fascula","Upper Roman":"Romano mai\u00fascula","Lower Roman":"Romano min\u00fascula","Name":"Nome","Anchor":"\u00c2ncora","Anchors":"\u00c2ncoras","Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores.":"O ID deve iniciar com uma letra, seguida apenas por letras, n\u00fameros, tra\u00e7os, pontos, dois pontos ou sublinhados.","Id":"ID","Document properties":"Propriedades do documento","Title":"T\u00edtulo","Keywords":"Palavras-chave","Encoding":"Codifica\u00e7\u00e3o","Description":"Descri\u00e7\u00e3o","Author":"Autor","Image":"Imagem","Insert\/edit image":"Inserir\/editar imagem","General":"Geral","Advanced":"Avan\u00e7ado","Source":"Origem","Border":"Borda","Constrain proportions":"Manter propor\u00e7\u00f5es","Vertical space":"Espa\u00e7o vertical","Image description":"Descri\u00e7\u00e3o da imagem","Style":"Estilo","Dimensions":"Dimens\u00f5es","Insert image":"Inserir imagem","Date\/time":"Data\/hora","Insert date\/time":"Inserir data\/hora","Table of Contents":"Sum\u00e1rio","Insert\/Edit code sample":"Inserir\/editar amostra de c\u00f3digo","Language":"Idioma","Media":"M\u00eddia","Insert\/edit media":"Inserir\/editar m\u00eddia","Poster":"Autor","Alternative source":"Fonte alternativa","Paste your embed code below:":"Cole o c\u00f3digo de incorpora\u00e7\u00e3o abaixo:","Insert video":"Inserir v\u00eddeo","Embed":"Incorporar","Special character":"Caracteres especiais","Right to left":"Direita para a esquerda","Left to right":"Esquerda para a direita","Nonbreaking space":"Espa\u00e7o incondicional","Page break":"Quebra de p\u00e1gina","Paste as text":"Colar como texto","Preview":"Visualizar","Print":"Imprimir","Save":"Salvar","Fullscreen":"Tela inteira","Horizontal line":"Linha horizontal","Horizontal space":"Espa\u00e7o horizontal","Restore last draft":"Restaurar \u00faltimo rascunho","Insert\/edit link":"Inserir\/editar link","Remove link":"Remover link","Insert link":"Inserir link","Target":"Destino","New window":"Nova janela","Text to display":"Texto a exibir","Url":"URL","The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?":"O URL que voc\u00ea digitou parece ser um endere\u00e7o de e-mail. Voc\u00ea quer adicionar o prefixo obrigat\u00f3rio mailto:?","The URL you entered seems to be an external link. Do you want to add the required http:\/\/ prefix?":"O URL que voc\u00ea digitou parece ser um link externo. Quer adicionar o prefixo obrigat\u00f3rio http:\/\/?","Color":"Cor","Custom color":"Cor personalizada","Custom...":"Personalizada...","No color":"Nenhuma cor","Could not find the specified string.":"N\u00e3o foi poss\u00edvel encontrar a sequ\u00eancia de caracteres especificada.","Replace":"Substituir","Next":"Pr\u00f3ximo","Prev":"Anterior","Whole words":"Palavras inteiras","Find and replace":"Localizar e substituir","Replace with":"Substituir por","Find":"Localizar","Replace all":"Substituir tudo","Match case":"Coincidir capitaliza\u00e7\u00e3o","Spellcheck":"Verificar ortografia","Finish":"Finalizar","Ignore all":"Ignorar tudo","Ignore":"Ignorar","Add to Dictionary":"Adicionar ao dicion\u00e1rio","Insert table":"Inserir tabela","Delete table":"Excluir tabela","Table properties":"Propriedades da tabela","Row properties":"Propriedades da linha da tabela","Cell properties":"Propriedades da c\u00e9lula da tabela","Border color":"Cor da borda","Row":"Linha","Rows":"Linhas","Column":"Coluna","Cols":"Colunas","Cell":"C\u00e9lula","Header cell":"C\u00e9lula de cabe\u00e7alho","Header":"Cabe\u00e7alho","Body":"Corpo","Footer":"Rodap\u00e9","Insert row before":"Inserir linha antes","Insert row after":"Inserir linha depois","Insert column before":"Inserir coluna antes","Insert column after":"Inserir coluna depois","Paste row before":"Colar linha da tabela antes","Paste row after":"Colar linha da tabela depois","Delete row":"Excluir linha","Delete column":"Excluir coluna","Cut row":"Cortar linha","Copy row":"Copiar linha","Merge cells":"Mesclar c\u00e9lulas","Split cell":"Dividir c\u00e9lula","Height":"Altura","Width":"Largura","Caption":"Legenda","Alignment":"Alinhamento","H Align":"Alinhamento horizontal","Left":"Esquerda","Center":"Centro","Right":"Direita","None":"Nenhum","V Align":"Alinhamento vertical","Top":"Topo","Middle":"Meio","Bottom":"Base","Row group":"Grupo de linhas","Column group":"Grupo de colunas","Row type":"Tipo de linha","Cell type":"Tipo de c\u00e9lula","Cell padding":"Enchimento da c\u00e9lula","Cell spacing":"Espa\u00e7amento de c\u00e9lula","Scope":"Escopo","Insert template":"Inserir modelo","Templates":"Modelos","Background color":"Cor de fundo","Text color":"Cor do  texto","Show blocks":"Mostrar blocos","Show invisible characters":"Exibir caracteres invis\u00edveis","Words: {0}":"Palavras: {0}","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Agora colar est\u00e1 em modo de texto simples. O conte\u00fado ser\u00e1 colado como texto simples at\u00e9 que voc\u00ea desative esta op\u00e7\u00e3o.\n\nSe voc\u00ea deseja colar conte\u00fado avan\u00e7ado do Microsoft Word, tente desativar esta op\u00e7\u00e3o. O editor limpar\u00e1 automaticamente o texto colado do Word.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"\u00c1rea de rich text. Pressione Alt+Shift+H para obter ajuda.","Rich Text Area. Press Control-Option-H for help.":"\u00c1rea de rich text. Pressione Control-Option-H para obter ajuda.","You have unsaved changes are you sure you want to navigate away?":"As modifica\u00e7\u00f5es que voc\u00ea fez ser\u00e3o perdidas se voc\u00ea sair desta p\u00e1gina.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Seu navegador n\u00e3o suporta o acesso direto \u00e0 \u00e1rea de transfer\u00eancia. Utilize atalhos do teclado ou o menu Editar do seu navegador.","Insert":"Inserir","File":"Arquivo","Edit":"Editar","Tools":"Ferramentas","View":"Ver","Table":"Tabela","Format":"Formato","Toolbar Toggle":"Alternar barra de ferramentas","Insert Read More tag":"Inserir a tag \"Leia mais\"","Insert Page Break tag":"Inserir tag de quebra de p\u00e1gina","Read more...":"Leia mais...","Distraction-free writing mode":"Modo de escrita sem distra\u00e7\u00f5es","No alignment":"Sem alinhamento","Remove":"Remover","Edit|button":"Editar","Paste URL or type to search":"Cole o URL ou digite para pesquisar","Apply":"Aplicar","Link options":"Op\u00e7\u00f5es do link","Code|tab":"C\u00f3digo","Add Media":"Adicionar m\u00eddia","Keyboard Shortcuts":"Atalhos do teclado","Classic Block Keyboard Shortcuts":"Teclas de atalho do bloco cl\u00e1ssico","Default shortcuts,":"Atalhos padr\u00e3o,","Additional shortcuts,":"Atalhos adicionais,","Focus shortcuts:":"Atalhos de foco:","Inline toolbar (when an image, link or preview is selected)":"Barra de ferramentas embutida (quando uma imagem, link ou pr\u00e9-visualiza\u00e7\u00e3o \u00e9 selecionada)","Editor menu (when enabled)":"Menu do Editor (quando ativo)","Editor toolbar":"Barra de ferramentas do editor","Elements path":"Caminho dos elementos","Ctrl + Alt + letter:":"Ctrl + Alt + letra:","Shift + Alt + letter:":"Shift + Alt + letra:","Cmd + letter:":"Cmd + letra:","Ctrl + letter:":"Ctrl + letra:","Letter":"Letra","Action":"A\u00e7\u00e3o","Warning: the link has been inserted but may have errors. Please test it.":"Aten\u00e7\u00e3o: o link foi inserido, mas pode ter erros. \u00c9 necess\u00e1rio test\u00e1-lo.","To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons.":"Para mudar o foco para outros bot\u00f5es use Tab ou as setas do teclado. Para retornar o foco para o editor pressione ESC ou use um dos bot\u00f5es.","When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo.":"Ao iniciar um novo par\u00e1grafo com um destes atalhos seguidos de espa\u00e7o, a formata\u00e7\u00e3o ser\u00e1 aplicada automaticamente. Pressione Backspace ou Esc para desfazer.","The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo.":"Os atalhos de formata\u00e7\u00e3o seguintes s\u00e3o substitu\u00eddos ao pressionar Enter. Pressione Esc ou Desfazer para desfazer a a\u00e7\u00e3o.","The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo.":"O pr\u00f3ximo grupo de atalhos de formata\u00e7\u00e3o s\u00e3o aplicadas conforme voc\u00ea digita ou quando voc\u00ea insere em torno de texto simples no mesmo par\u00e1grafo. Pressione o bot\u00e3o ESC ou Voltar para voltar."});
+tinymce.ScriptLoader.markDone( 'https://casas.uemmg.org.br/wp-includes/js/tinymce/langs/pt.js' );
+</script>
+		<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-modal="true" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="7cd1ede2a9" />		<h1 id="link-modal-title">Inserir/editar link</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">
+			Fechar		</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Insira o URL de destino</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Texto do link</span>
+					<input id="wp-link-text" type="text" /></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target" /> Abrir link em nova aba</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Ou apontar para um conteúdo existente</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Pesquisar</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">Nenhum termo de busca especificado. Exibindo os mais recentes.</em>
+						<em class="query-notice-hint screen-reader-text">
+							Pesquise ou use as teclas seta para cima/baixo para selecionar um item.						</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancelar</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Adicionar link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload==='function')wpOnload();</script>
+</body>
+</html>
