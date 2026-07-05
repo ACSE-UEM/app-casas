@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e6e8eb",
+                    "outline": "#717783",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#194b67",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e0e3e6",
+                    "tertiary": "#735c00",
+                    "secondary-fixed-dim": "#97d2c7",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#d8dadd",
+                    "outline-variant": "#c1c7d3",
+                    "on-secondary-fixed-variant": "#0e5048",
+                    "inverse-on-surface": "#eff1f4",
+                    "tertiary-container": "#cca72f",
+                    "on-error-container": "#93000a",
+                    "background": "#f7f9fc",
+                    "primary-container": "#4c7a97",
+                    "on-primary-fixed": "#001e2e",
+                    "on-surface": "#191c1e",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed": "#b2eee3",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f7f9fc",
+                    "surface": "#f7f9fc",
+                    "on-surface-variant": "#414751",
+                    "primary-fixed-dim": "#9fcced",
+                    "on-secondary-fixed": "#00201c",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#b2eee3",
+                    "tertiary-fixed": "#ffe088",
+                    "on-background": "#191c1e",
+                    "on-secondary-container": "#346e65",
+                    "primary": "#32617d",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "surface-container": "#eceef1",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#9fcced",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f2f4f7",
+                    "on-tertiary-container": "#4e3d00",
+                    "secondary": "#2d685f",
+                    "on-primary-container": "#fcfcff",
+                    "surface-tint": "#356380",
+                    "primary-fixed": "#c7e7ff",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #f7f9fc; color: #191c1e; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- Sidebar Navigation -->
+<aside class="hidden md:flex h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 flex-col p-4 space-y-2 z-50" style="box-shadow: 0px 12px 32px rgba(25, 28, 30, 0.06);">
+<div class="mb-6 px-2">
+<h1 class="text-lg font-extrabold text-sky-900 dark:text-sky-100 font-headline">Gestão de Luz</h1>
+<p class="text-xs text-slate-500 font-medium">Painel Administrativo</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800/50 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800/50 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="home_work">home_work</span>
+<span class="font-medium">Minha Casa</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-sky-100 dark:bg-sky-900/30 text-sky-900 dark:text-sky-100 rounded-xl font-bold transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+<span class="font-medium">Gestão Federativa</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800/50 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="font-medium">Voluntários</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800/50 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-medium">Mapa</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800/50 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-medium">Configurações</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-slate-200/50 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-medium">Ajuda</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200 rounded-xl transition-transform duration-200 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-medium">Sair</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 min-h-screen pb-20 md:pb-8">
+<!-- Top Bar -->
+<header class="sticky top-0 z-40 bg-white/80 glass-nav px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h2 class="text-2xl font-bold tracking-tight text-sky-900 font-headline">Painel Federativo</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-outline text-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-64 placeholder:text-outline" placeholder="Buscar casas ou regiões..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-600 hover:text-sky-700 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-white shadow-sm">
+<img alt="Perfil" data-alt="professional portrait of a federation administrator in a clean office setting with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUzuWigPeL2NXL_3GhA_GxEszwm1abaPKgZiKSmxHVEfgCCf3gmIacYAxhqBFWIheAYvzOy9zkmjkoUK6H9tz8b9aRJ5lUVnRDyANxgbBkLADfF4zATjvqg6xt5Dwxm3smC2swIXvczhZkeezRI1YPOnYlfnL1hhZe7P_n-dzD0uJUWCc_lkz0CxDGzS3MjgGIcfQCoetVyR1ThWfnDv3_olSfvLIf0Hdk2P91h7sPgdNy88EqNf4ZGZ15PKHaSPpTkkV_3aUwA3iv"/>
+</div>
+</div>
+</div>
+</header>
+<div class="max-w-7xl mx-auto px-6 mt-8 space-y-8">
+<!-- Bento Grid Section: Key Metrics & Map -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Macro Region Map (Large) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-3xl p-1 overflow-hidden relative min-h-[400px] group">
+<div class="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur px-4 py-2 rounded-2xl shadow-sm">
+<h3 class="font-headline font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+                            Jurisdições Regionais
+                        </h3>
+<p class="text-xs text-on-surface-variant">Mapa de Ocupação e Crescimento</p>
+</div>
+<div class="w-full h-full min-h-[400px] bg-slate-100 rounded-3xl overflow-hidden relative">
+<!-- Simulated Map View -->
+<img alt="Mapa Regional" class="w-full h-full object-cover opacity-80" data-alt="stylized geographic map of a region with soft desaturated greens and blues representing administrative zones" data-location="Brasil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-UYIuaxEzXRZx5wu20T7rFaMKwGLpT-eqYxCnG72Jb-dYrCc0IvKrmX6GhXUVSeorK-2YSNNTzUFqHKXhOa7h0Za_k7lAoQLVI7YVYLItm3bwqBBNUKZYCZO1xffFbk-g8TAorfoz3nNXD2CU8_S1GogFCP20SKj4OfvhD3w76Oi-ILznsTHHv_tjx5SD_mcfJxnI0LrQC4b7DUOcjyv_n5cUeIrBuURbbo7qRlDyXWr1OsnGTi-rRYB0zDJd-wORTtwMavprzNg7"/>
+<!-- Map Overlay Pins -->
+<div class="absolute top-1/3 left-1/4 group-hover:scale-110 transition-transform">
+<div class="w-6 h-6 bg-primary rounded-full border-4 border-white shadow-lg animate-pulse"></div>
+<div class="mt-2 bg-white px-2 py-1 rounded text-[10px] font-bold shadow-sm">Macro-01</div>
+</div>
+<div class="absolute bottom-1/4 right-1/3 group-hover:scale-110 transition-transform">
+<div class="w-6 h-6 bg-secondary rounded-full border-4 border-white shadow-lg"></div>
+<div class="mt-2 bg-white px-2 py-1 rounded text-[10px] font-bold shadow-sm">Micro-Interior</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats (Tall) -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-primary rounded-3xl p-6 text-on-primary shadow-sm relative overflow-hidden h-full flex flex-col justify-between">
+<div class="relative z-10">
+<p class="text-primary-fixed opacity-80 text-sm font-medium uppercase tracking-widest">Total de Adesões</p>
+<h4 class="text-5xl font-extrabold font-headline mt-2">1,284</h4>
+<div class="mt-4 flex items-center gap-2 text-xs bg-white/20 w-fit px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+                                12% em relação ao ano anterior
+                            </div>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4 relative z-10">
+<div class="bg-white/10 p-4 rounded-2xl backdrop-blur-sm">
+<p class="text-xs opacity-70">Casas Ativas</p>
+<p class="text-xl font-bold">1,150</p>
+</div>
+<div class="bg-white/10 p-4 rounded-2xl backdrop-blur-sm">
+<p class="text-xs opacity-70">Pendentes</p>
+<p class="text-xl font-bold">24</p>
+</div>
+</div>
+<!-- Abstract Texture -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Pending Approvals & Indicators -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Pending Approvals -->
+<div class="lg:col-span-2 bg-surface-container-low rounded-3xl p-8">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline font-bold text-xl text-on-surface">Revisão de Novas Casas</h3>
+<button class="text-primary text-sm font-semibold hover:underline">Ver todas</button>
+</div>
+<div class="space-y-4">
+<!-- Approval Item 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="temple_buddhist">temple_buddhist</span>
+</div>
+<div>
+<h5 class="font-bold text-on-surface">Centro Espírita Fé e Amor</h5>
+<p class="text-sm text-on-surface-variant">São Paulo - Macro-01</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-[10px] font-bold uppercase tracking-wider text-tertiary-container bg-tertiary-fixed px-3 py-1 rounded-full">Pendente Docs</span>
+<button class="p-2 text-primary hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-xl text-sm font-bold shadow-sm hover:opacity-90 transition-opacity">
+                                    REVISAR
+                                </button>
+</div>
+</div>
+<!-- Approval Item 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="church">church</span>
+</div>
+<div>
+<h5 class="font-bold text-on-surface">Fraternidade Francisco de Assis</h5>
+<p class="text-sm text-on-surface-variant">Campinas - Micro-Central</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-[10px] font-bold uppercase tracking-wider text-secondary bg-secondary-container px-3 py-1 rounded-full">Aguardando Regional</span>
+<button class="p-2 text-primary hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-xl text-sm font-bold shadow-sm hover:opacity-90 transition-opacity">
+                                    REVISAR
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Municipal Org Space (AME/USE) -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 border-2 border-surface-container shadow-sm flex flex-col">
+<h3 class="font-headline font-bold text-xl text-on-surface mb-6">Órgãos Municipais</h3>
+<div class="space-y-6 flex-1">
+<div class="flex gap-4 p-4 rounded-2xl hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-10 h-10 shrink-0 bg-tertiary-fixed-dim rounded-xl flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+</div>
+<div>
+<p class="font-bold text-sm">AME - São Paulo</p>
+<p class="text-xs text-on-surface-variant">Aliança Municipal Espírita</p>
+<p class="text-[10px] mt-2 flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[12px]" data-icon="check_circle">check_circle</span>
+                                    124 Casas Integradas
+                                </p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-2xl hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-10 h-10 shrink-0 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+</div>
+<div>
+<p class="font-bold text-sm">USE - Regional ABC</p>
+<p class="text-xs text-on-surface-variant">União das Sociedades Espíritas</p>
+<p class="text-[10px] mt-2 flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[12px]" data-icon="check_circle">check_circle</span>
+                                    86 Casas Integradas
+                                </p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full py-4 border-2 border-dashed border-outline-variant rounded-2xl text-outline text-sm font-semibold hover:bg-surface-container-low transition-colors">
+                        Vincular Novo Órgão
+                    </button>
+</div>
+</section>
+<!-- Tools & Communication -->
+<section class="bg-secondary rounded-[2.5rem] p-10 text-on-secondary relative overflow-hidden">
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold mb-4 leading-tight">Comunicação Unificada com as Casas</h2>
+<p class="text-on-secondary/80 text-lg">Dispare notificações oficiais, circulares e atualizações federativas via Email ou WhatsApp de forma automatizada para todos os dirigentes.</p>
+<div class="mt-8 flex flex-wrap gap-4">
+<button class="bg-white text-secondary px-8 py-3 rounded-full font-bold shadow-lg flex items-center gap-2 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+                                NOVA CIRCULAR
+                            </button>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                                CANAL WHATSAPP
+                            </button>
+</div>
+</div>
+<div class="relative w-full lg:w-1/3">
+<div class="aspect-square bg-white/10 rounded-3xl p-6 backdrop-blur-md border border-white/20">
+<div class="mb-4 flex items-center justify-between">
+<p class="font-bold">Status dos Canais</p>
+<span class="w-3 h-3 bg-green-400 rounded-full animate-ping"></span>
+</div>
+<div class="space-y-4">
+<div class="bg-white/5 p-4 rounded-xl">
+<div class="flex justify-between text-xs mb-1">
+<span>Entrega WhatsApp</span>
+<span>98%</span>
+</div>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-[98%]"></div>
+</div>
+</div>
+<div class="bg-white/5 p-4 rounded-xl">
+<div class="flex justify-between text-xs mb-1">
+<span>Abertura E-mail</span>
+<span>74%</span>
+</div>
+<div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[74%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Artistic Background Circle -->
+<div class="absolute -left-20 -top-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-slate-200/50 bg-slate-100 mt-12">
+<div>
+<h4 class="text-xl font-bold text-teal-800 font-headline">Portal da Luz</h4>
+<p class="text-sm font-light text-slate-500 mt-2">© 2024 Federação Espírita - Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-sm text-slate-500 hover:underline decoration-teal-500/50" href="#">Acessibilidade</a>
+<a class="text-sm text-slate-500 hover:underline decoration-teal-500/50" href="#">Privacidade</a>
+<a class="text-sm text-slate-500 hover:underline decoration-teal-500/50" href="#">Termos de Uso</a>
+</div>
+</footer>
+</main>
+<!-- Bottom Nav for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200/50 flex justify-around items-center py-3 z-50">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-[10px] font-bold">Painel</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+<span class="text-[10px]">Gestão</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="text-[10px]">Mapa</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="text-[10px]">Alertas</span>
+</a>
+</nav>
+</body></html>

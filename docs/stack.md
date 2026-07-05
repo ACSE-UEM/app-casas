@@ -5,9 +5,8 @@ The technology stack that must be preserved
 - PHP 8.0
 - Wordpress Integration
 - HTML5
-- wcag acessibility
+- WCAG acessibility
 
-- multi-tenant
 - multi-user
 - multi-profile
 
@@ -20,6 +19,6 @@ Architecture
 - api specification
   - respect every feature manage
 - oidc / oauth2 / iam
-- offline
+- allow offline usage
 - websocket
 - frontend

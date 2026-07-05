@@ -12,14 +12,13 @@ This backlog is organized into Epics. Descriptions have been refactored for clar
 ## Epic 2: Casa Management (Institutional Space)
 **Goal:** Provide a comprehensive "intranet" and public showcase for the Center.
 *   **Feat 2.1: Basic Data Management:** As a House Admin, I want to manage public contacts, departments, and basic info.
-*   **Feat 2.2: Theme & Branding Customization:** As a House Admin, I want to select visual themes and upload logos/assets for my Casa's page.
-*   **Feat 2.3: Support & Administrative Guides:** As a House Admin, I want the system to render specific administrative guides (legal, doctrinal) dynamically based on the activities my Casa offers.
-*   **Feat 2.4: Feature Toggles:** As a House Admin, I want to toggle specific modules (Events, Lectures, Volunteer recruitment) on/off for my Casa.
+*   **Feat 2.2: Support & Administrative Guides:** As a House Admin, I want the system to render specific administrative guides (legal, doctrinal) dynamically based on the activities my Casa offers.
+*   **Feat 2.3: Feature Toggles:** As a House Admin, I want to toggle specific modules (Events, Lectures, Volunteer recruitment) on/off for my Casa.
 
 ## Epic 3: Activities, Events, and Lectures Management
 **Goal:** Map the core work of the center and make it discoverable.
 *   **Feat 3.1: Activity CRUD:** As a Coordinator, I want to create deep profiles for activities (slug, schedule, format, responsibility, exportable ICS calendar).
-*   **Feat 3.2: Volunteer Recruitment (Quero Ajudar):** As a Coordinator, I want to flag an activity as "Accepting Volunteers" so that interested individuals can apply directly.
+*   **Feat 3.2: Volunteer Recruitment (Quero Ajudar):** As a Coordinator, I want to flag an activity as "Accepting Volunteers" so that interested individuals can apply directly, and when that happens be notified immediately.
 *   **Feat 3.3: Event Management:** As a Coordinator, I want to create time-bound events with registration URLs and social sharing buttons.
 *   **Feat 3.4: Lecture Management & Promotion:** As a Coordinator, I want to register public lectures so they appear automatically on the State/Regional marquee headers and Casa homepage.
 *   **Feat 3.5: AI Art Generation (Events):** As a Coordinator, I want the system to suggest AI-generated promotional art based on the event's data.

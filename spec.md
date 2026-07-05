@@ -1,38 +1,26 @@
 # Especificação Consolidada
 
-## Resumo
-Esta documentação consolidada reúne as informações provenientes da pasta `spec-revised/`, `spec-cursor/`, e `spec/`. A estrutura segue a abordagem de organização da `spec-cursor/`, incorporando todos os detalhes necessários para compreender a funcionalidade e a arquitetura do projeto.
+A especificação final e consolidada do projeto vive em **[`spec-final/`](spec-final/00-leia-me.md)**.
 
-## 1. Estrutura Organizacional (Baseado em spec-cursor)
-- Detalhes sobre organização e fluxo de trabalho do projeto.
+| Documento | Conteúdo |
+| :--- | :--- |
+| [00 — Leia-me](spec-final/00-leia-me.md) | Índice, convenções e relação com as pastas históricas |
+| [01 — Visão e Contexto](spec-final/01-visao-e-contexto.md) | Visão, operador, hierarquia federativa, públicos, PTMEB |
+| [02 — Modelo de Domínio](spec-final/02-modelo-de-dominio.md) | Entidades, taxonomia de áreas, visões, ciclo de vida da Casa |
+| [03 — Backlog Unificado](spec-final/03-backlog-unificado.md) | Épicos e histórias rotuladas (fazer agora / avaliar bem / não fazer) |
+| [04 — IAM e RBAC](spec-final/04-iam-rbac.md) | Papéis, matriz de permissões, auditoria |
+| [05 — Fluxos Operacionais](spec-final/05-fluxos-operacionais.md) | Adesão, revisão, recertificação, disputas, moderação |
+| [06 — Integrações, API e SEO](spec-final/06-integracoes-api-seo.md) | API, plugin WordPress, webhooks, JSON-LD, URLs, MCP |
+| [07 — LGPD e Privacidade](spec-final/07-lgpd-privacidade.md) | Papéis LGPD, consentimentos, menores, retenção, direitos |
+| [08 — Acessibilidade e UX](spec-final/08-acessibilidade-ux.md) | WCAG, VLibras, temas, design system, PWA/offline |
+| [09 — Riscos e Mitigação](spec-final/09-riscos-e-mitigacao.md) | Modelo de ameaças e defesa em camadas |
+| [10 — NFRs e Operação](spec-final/10-nfr-e-operacao.md) | Stack, desempenho, backup/DR, KPIs |
+| [11 — Decisões](spec-final/11-decisoes.md) | Decisões, assunções, pendências e rastreabilidade |
+| [12 — Requisitos Arquiteturais (ASR)](spec-final/12-asr.md) | Requisitos que moldam a arquitetura; ponte PRD → ADR |
 
-## 2. Recursos Detalhados
-### Recursos Gerais (Baseados em spec/features.md)
-- Descrição dos recursos e funcionalidades previstas para o sistema.
+Acima da especificação (carta e governança): [`VISION.md`](VISION.md),
+[`GOVERNANCE.md`](GOVERNANCE.md), [`CONTRIBUTING.md`](CONTRIBUTING.md) e o mapa de
+documentos [`docs/taxonomia-documentos.md`](docs/taxonomia-documentos.md).
 
-## 3. Modelo de Domínio (Obtido de spec-revised/02)
-- Representação do modelo de dados utilizados no sistema.
-
-## 4. Épicos da Aplicação (Baseados em spec-revised/03)
-- Épico 1: [Descrição]
-- Épico 2: [Descrição]
-- Épico 3: [Descrição]
-- Épico 4: [Descrição]
-- Épico 5: [Descrição]
-- Épico 6: [Descrição]
-
-## 5. Controle de Acesso Baseado em Funções (RBAC)
-- Detalhes sobre controle de acesso e permissões, integrando informações de `spec/` e `spec-revised/`.
-
-## 6. Integrações Externas (Baseadas em spec/integracoes-externas.md e spec-revised/05)
-- Detalhes sobre integrações planejadas com serviços externos.
-
-## 7. Riscos e Mitigações (também extraídos de spec-revised/07-08 e spec/riscos.md)
-- Risco 1: [Descrição e Mitigação]
-- Risco 2: [Descrição e Mitigação]
-
-## 8. Questões e Lacunas Abertas
-- Questões chave e lacunas identificadas em `spec-cursor/02` que precisam ser decididas. 
-
-
-Essa é uma versão inicial da especificação consolidada. Detalhes adicionais de cada seção devem ser preenchidos posteriormente.
+Histórico (não são mais fonte de verdade): [`spec/`](spec/), [`spec-revised/`](spec-revised/),
+[`spec-cursor/`](spec-cursor/).

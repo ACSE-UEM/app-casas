@@ -1,0 +1,8 @@
+{
+  // Linhas longas são permitidas (tabelas e URLs da especificação)
+  "MD013": false,
+  // Permitir ênfase como destaque de termos
+  "MD036": false,
+  // Tabs são obrigatórios em blocos de código de Makefile
+  "MD010": { "code_blocks": false }
+}

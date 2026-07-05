@@ -319,31 +319,21 @@ Conjunto de ferramentas e funcionalidades para atender as micro-regiões
 - Áreas funcionais
 - site
 - redes sociais
-- quais municípios abrange
+- quais casas atende
 
-As casas de uma determinada localidade serão atendidas pelas micro-regiões que englobam a cidade.
+As casas de uma determinada localidade serão atendidas pelo órgão municipal mais próximo.
 
 Cada micro-região terá várias páginas próprias, que servirá aos diferentes perfis de acesso. 
-
-
-
-
 
 As federativas podem ter órgãos e/ou coordenações que cuidam de municípios.
 
 Conjunto de ferramentas e funcionalidades para atender os órgõas municipais
-- Ativação
-- Nome
-- Informações de contato
-- Áreas funcionais
-- site
-- redes sociais
-- quais casas atende
+
 Facilitar acompanhamento das Casas a partir da "unidade" da AME: 
 - inscrição
-- listagem
+- listagem das casas
 - página própria
-- contato, documentos instrução, 
+- contato, documentos instrução
 ...
 
 ## Tratamento diferenciado para casas não revisadas
@@ -413,7 +403,6 @@ OBTENÇÃO DE FEEDBACK / DESPERSONALIZAR			Conversar com representantes dos púb
 ## Features internos ou técnicos
 
 - Rastreamento de novidades
-- Implementar OPENSEARCH SPECIFICATION
 - Facilitar que determinados campos sejam preenchidos automaticamente, e com isso, automações possam ser construídas
 
 ## Espaço de diagnóstico "local"
@@ -448,7 +437,7 @@ FALE E SEJA ENCAMINHADO			REDIR PARA ATENDIMENTO FRATERNO ONLINE OU 24h
 LINKS P/ SERVIÇOS PERMANENTES: CVV, FEB ESCUTA, SOS PRECE			
 
 
-## Gestão de cidade
+## Base de cidades do Brasil
 
 - O app deve manter uma base de todas os municipios e distritos do brasil.
 - Cada cidade deve também ter o códigos de bases nacionais (como IBGE) para facilitar buscar dados de indicadores nacionais, como população, indice de desenvolvimento e outros
@@ -460,9 +449,9 @@ Se a federativa tem micro-regiões cadastradas, deve existir uma coluna relacion
 
 Se a federativa tem órgãos municipais, deve existir uma coluna relacionando a cidade com essa informação.
 
- que serão relacionadas com federativas, macro-regiões 
+### Atributos
 
-- permitir editar chave valor para coisas que valem somente para uma cidade
+Além das informações federativas, pode-se adicionar um conjunto de chave valor para ser apresentado no template da cidade.
 
 
 ## Dicas IA
@@ -501,4 +490,25 @@ Alguns recursos demandarão mais avaliação ou serão atendidos em outros lugar
 
 - como público externo posso querer recomendar uma casa espírita pra fazer parte desse site. As equipes regionais podem entrar em contato com a casa e auxiliá-la na inscrição/adesao.
 
+## Prova de propriedade
+
+requer CNPJ ?
+requer Estatuto ?
+requer Regimento ?
+
+### Resolução de conflito
+
+- Quem resolve qdo há conflito ?
+
+## OpenSearch
+
+- Implementar OpenSearch
+
+## MCP
+
+- Implementar MCP
+
+## Verificação de conteúdo sensível
+
+- os conteúdos desenvolvidos pelas casas são de inteira responsabilidade das mesmas.
 

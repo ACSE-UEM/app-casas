@@ -1,0 +1,65 @@
+# AI Context Exclusion File
+# Prevents AI assistants from reading sensitive files, protecting against 
+# data exfiltration, context window bloat, and security leaks.
+
+# 1. Credentials, Environment Variables & Secrets
+**/.env
+**/.env.*
+**/env-*
+**/variables-*.env
+**/*.pem
+**/*.key
+**/*.cert
+**/*.crt
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*_rsa
+**/*_ed25519
+**/secret*.yml
+**/secret*.yaml
+**/*-secret.json
+**/credentials.json
+local/*.env
+
+# 2. Database & Data Dumps
+**/*.sql
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.dump
+docs/database/*.txt
+docs/database/*.sql
+
+# 3. Logs (Prevents leaking operational data or PII)
+**/*.log
+**/logs/
+**/storage/logs/
+nginx/logs/
+
+# 4. Dependency Directories (Saves context window & avoids analyzing 3rd party code)
+**/vendor/
+**/node_modules/
+**/bower_components/
+
+# 5. Build, Cache, and Temporary Files
+**/.cache/
+**/.phpunit.result.cache
+**/.php-cs-fixer.cache
+**/public/build/
+**/public/hot/
+**/public/storage/
+**/storage/framework/cache/
+**/storage/framework/sessions/
+**/storage/framework/views/
+**/storage/app/public/
+
+# 6. IDE & System Files
+**/.idea/
+**/.vscode/
+**/.DS_Store
+**/Thumbs.db
+
+# 7. Terraform & Infrastructure State (Prevents exposing cloud architecture secrets)
+**/*.tfstate
+**/*.tfstate.backup
